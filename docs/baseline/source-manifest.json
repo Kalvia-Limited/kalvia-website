@@ -1,0 +1,47 @@
+﻿[
+    {
+        "path":  "kalvia-website/assets/favicon.svg",
+        "sha256":  "e61b3f457b2f4f7b05fe1e311117dc7c477ebc00c8779eba3f586c3575b13e56",
+        "bytes":  14236
+    },
+    {
+        "path":  "kalvia-website/assets/hero-team.webp",
+        "sha256":  "76063205344d95eb330c31ef1459c13da8d111dd96f512b0b5edd5b853d4c3db",
+        "bytes":  120588
+    },
+    {
+        "path":  "kalvia-website/assets/machinist.webp",
+        "sha256":  "ab73764b676e42ddb9dfb77b5ada6318895ffdebf1962dd498bcd93159a38b35",
+        "bytes":  41816
+    },
+    {
+        "path":  "kalvia-website/assets/site.webp",
+        "sha256":  "b5a474688f530e6b91077bcc85b77dbcaf9d6b1a0baee6857d48cf0f02614f38",
+        "bytes":  52418
+    },
+    {
+        "path":  "kalvia-website/assets/workshop.webp",
+        "sha256":  "be715d4fd0a3ff05fe152ad6e4e84df13ce104acdf1618661709f1fcfcd9b975",
+        "bytes":  94998
+    },
+    {
+        "path":  "kalvia-website/index.html",
+        "sha256":  "8fa05b63ab1ba7cf639579a4d9ac1fdcfac70cfc31b320e6f4258786ebae3df1",
+        "bytes":  43683
+    },
+    {
+        "path":  "kalvia-website/index.original.html",
+        "sha256":  "4590471f14ad47252f01598292f30ef8b6a3fd33682db1d5765fd31e7871b6c6",
+        "bytes":  99781
+    },
+    {
+        "path":  "kalvia-website/script.js",
+        "sha256":  "05155da8393075d745eb4fdeb193caa5f76387f30f2fa312033a04d42ffbc6e4",
+        "bytes":  20282
+    },
+    {
+        "path":  "kalvia-website/styles.css",
+        "sha256":  "39c1ce580bc66a40aada215b160449c86bbae26f94d02aa5898bb760ed68d355",
+        "bytes":  35879
+    }
+]

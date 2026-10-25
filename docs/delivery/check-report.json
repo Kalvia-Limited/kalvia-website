@@ -1,0 +1,89 @@
+{
+  "checks": [
+    "Canonical uses confirmed HTTPS domain",
+    "Site title and description present",
+    "Theme colour and SVG favicon present",
+    "opengraph-image metadata points to production",
+    "opengraph-image returns 1200 by 630 PNG",
+    "twitter-image metadata points to production",
+    "twitter-image returns 1200 by 630 PNG",
+    "Robots points to production sitemap",
+    "Sitemap contains homepage only",
+    "390px hero loaded and preloaded",
+    "390px gallery deferred with reserved dimensions",
+    "390px image and rotating headline dimensions stable",
+    "390px no horizontal overflow",
+    "390px layout shift below 0.1",
+    "768px hero loaded and preloaded",
+    "768px gallery deferred with reserved dimensions",
+    "768px image and rotating headline dimensions stable",
+    "768px no horizontal overflow",
+    "768px layout shift below 0.1",
+    "1440px hero loaded and preloaded",
+    "1440px gallery deferred with reserved dimensions",
+    "1440px image and rotating headline dimensions stable",
+    "1440px no horizontal overflow",
+    "1440px layout shift below 0.1",
+    "No browser errors"
+  ],
+  "samples": [
+    {
+      "width": 390,
+      "score": 0,
+      "hero": {
+        "width": 411.6875,
+        "height": 236.0625
+      },
+      "headline": {
+        "width": 358,
+        "height": 215.9375
+      },
+      "loaded": true,
+      "preload": true,
+      "gallery": true,
+      "shifts": [],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "score": 0,
+      "hero": {
+        "width": 720,
+        "height": 413.75
+      },
+      "headline": {
+        "width": 691.5625,
+        "height": 139.359375
+      },
+      "loaded": true,
+      "preload": true,
+      "gallery": true,
+      "shifts": [],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "score": 0.00034055056994700296,
+      "hero": {
+        "width": 684.890625,
+        "height": 393.578125
+      },
+      "headline": {
+        "width": 553.15625,
+        "height": 397.34375
+      },
+      "loaded": true,
+      "preload": true,
+      "gallery": true,
+      "shifts": [
+        {
+          "value": 0.00034055056994700296,
+          "sources": [
+            "hero-tag accent"
+          ]
+        }
+      ],
+      "overflow": false
+    }
+  ]
+}

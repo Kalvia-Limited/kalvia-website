@@ -1,0 +1,2765 @@
+{
+  "origin": "http://127.0.0.1:3200",
+  "engine": "axe-core",
+  "checks": [
+    "320x740: first Tab exposes the skip link",
+    "320x740: skip link reaches main content",
+    "320x740: controls offer 44px touch targets",
+    "320x740: prosperity buttons do not overlap",
+    "320x740: form inputs avoid mobile focus zoom",
+    "320x740: all gallery images remain available",
+    "320x740: hidden panels exclude their descendants",
+    "320x740: menu opening focuses a link",
+    "320x740: menu link 1 is visible",
+    "320x740: menu link 2 is visible",
+    "320x740: menu link 3 is visible",
+    "320x740: menu link 4 is visible",
+    "320x740: menu link 5 is visible",
+    "320x740: Escape closes and returns menu focus",
+    "320x740: mobile journey graphic cannot cover steps",
+    "320px: expanded value descriptions are not clipped at 200%",
+    "320px: text at 200% reflows without clipped controls",
+    "360x800: first Tab exposes the skip link",
+    "360x800: skip link reaches main content",
+    "360x800: controls offer 44px touch targets",
+    "360x800: prosperity buttons do not overlap",
+    "360x800: form inputs avoid mobile focus zoom",
+    "360x800: all gallery images remain available",
+    "360x800: hidden panels exclude their descendants",
+    "360x800: menu opening focuses a link",
+    "360x800: menu link 1 is visible",
+    "360x800: menu link 2 is visible",
+    "360x800: menu link 3 is visible",
+    "360x800: menu link 4 is visible",
+    "360x800: menu link 5 is visible",
+    "360x800: Escape closes and returns menu focus",
+    "360x800: mobile journey graphic cannot cover steps",
+    "390x844: first Tab exposes the skip link",
+    "390x844: skip link reaches main content",
+    "390x844: controls offer 44px touch targets",
+    "390x844: prosperity buttons do not overlap",
+    "390x844: form inputs avoid mobile focus zoom",
+    "390x844: all gallery images remain available",
+    "390x844: hidden panels exclude their descendants",
+    "390x844: menu opening focuses a link",
+    "390x844: menu link 1 is visible",
+    "390x844: menu link 2 is visible",
+    "390x844: menu link 3 is visible",
+    "390x844: menu link 4 is visible",
+    "390x844: menu link 5 is visible",
+    "390x844: Escape closes and returns menu focus",
+    "390x844: mobile journey graphic cannot cover steps",
+    "Validation focuses the first invalid field clear of the header",
+    "Contact field focus remains visible",
+    "Keyboard changes the enquiry interest and highlights its chip",
+    "Contact status is a polite atomic live region",
+    "Value descriptions are available in the accessibility tree",
+    "Hero headline has a stable readable screen-reader name",
+    "430x932: first Tab exposes the skip link",
+    "430x932: skip link reaches main content",
+    "430x932: controls offer 44px touch targets",
+    "430x932: prosperity buttons do not overlap",
+    "430x932: form inputs avoid mobile focus zoom",
+    "430x932: all gallery images remain available",
+    "430x932: hidden panels exclude their descendants",
+    "430x932: menu opening focuses a link",
+    "430x932: menu link 1 is visible",
+    "430x932: menu link 2 is visible",
+    "430x932: menu link 3 is visible",
+    "430x932: menu link 4 is visible",
+    "430x932: menu link 5 is visible",
+    "430x932: Escape closes and returns menu focus",
+    "430x932: mobile journey graphic cannot cover steps",
+    "768x1024: first Tab exposes the skip link",
+    "768x1024: skip link reaches main content",
+    "768x1024: controls offer 44px touch targets",
+    "768x1024: prosperity buttons do not overlap",
+    "768x1024: form inputs avoid mobile focus zoom",
+    "768x1024: all gallery images remain available",
+    "768x1024: hidden panels exclude their descendants",
+    "768x1024: menu opening focuses a link",
+    "768x1024: menu link 1 is visible",
+    "768x1024: menu link 2 is visible",
+    "768x1024: menu link 3 is visible",
+    "768x1024: menu link 4 is visible",
+    "768x1024: menu link 5 is visible",
+    "768x1024: Escape closes and returns menu focus",
+    "768x1024: mobile journey graphic cannot cover steps",
+    "768px: expanded value descriptions are not clipped at 200%",
+    "768px: text at 200% reflows without clipped controls",
+    "920x900: first Tab exposes the skip link",
+    "920x900: skip link reaches main content",
+    "920x900: controls offer 44px touch targets",
+    "920x900: prosperity buttons do not overlap",
+    "920x900: form inputs avoid mobile focus zoom",
+    "920x900: all gallery images remain available",
+    "920x900: hidden panels exclude their descendants",
+    "920x900: menu opening focuses a link",
+    "920x900: menu link 1 is visible",
+    "920x900: menu link 2 is visible",
+    "920x900: menu link 3 is visible",
+    "920x900: menu link 4 is visible",
+    "920x900: menu link 5 is visible",
+    "920x900: Escape closes and returns menu focus",
+    "1024x768: first Tab exposes the skip link",
+    "1024x768: skip link reaches main content",
+    "1024x768: controls offer 44px touch targets",
+    "1024x768: prosperity buttons do not overlap",
+    "1024x768: form inputs avoid mobile focus zoom",
+    "1024x768: all gallery images remain available",
+    "1024x768: hidden panels exclude their descendants",
+    "1440x1000: first Tab exposes the skip link",
+    "1440x1000: skip link reaches main content",
+    "1440x1000: controls offer 44px touch targets",
+    "1440x1000: prosperity buttons do not overlap",
+    "1440x1000: form inputs avoid mobile focus zoom",
+    "1440x1000: all gallery images remain available",
+    "1440x1000: hidden panels exclude their descendants",
+    "1440px: expanded value descriptions are not clipped at 200%",
+    "1440px: text at 200% reflows without clipped controls",
+    "844x390: first Tab exposes the skip link",
+    "844x390: skip link reaches main content",
+    "844x390: controls offer 44px touch targets",
+    "844x390: prosperity buttons do not overlap",
+    "844x390: form inputs avoid mobile focus zoom",
+    "844x390: all gallery images remain available",
+    "844x390: hidden panels exclude their descendants",
+    "844x390: menu opening focuses a link",
+    "844x390: menu link 1 is visible",
+    "844x390: menu link 2 is visible",
+    "844x390: menu link 3 is visible",
+    "844x390: menu link 4 is visible",
+    "844x390: menu link 5 is visible",
+    "844x390: Escape closes and returns menu focus",
+    "844x390: mobile journey graphic cannot cover steps",
+    "Page motion control pauses automatic animation and parallax"
+  ],
+  "records": [
+    {
+      "width": 320,
+      "height": 740,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "200% text",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "li:nth-child(1) > span:nth-child(2)"
+            ],
+            [
+              ".contact-list > li:nth-child(2)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "200% text with values expanded",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "li:nth-child(1) > span:nth-child(2)"
+            ],
+            [
+              ".contact-list > li:nth-child(2)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "[data-cycle=\"after\"]",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".cta-band > span:nth-child(1)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "#tab-market",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "#market-audience-tab-1",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "[data-try=\"KA17/A\"]",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "[data-try=\"KA09/C\"]",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": ".value",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "invalid contact form",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".hero-lede"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "200% text",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".promise-item.reveal[data-delay=\"2\"] > div > h3"
+            ],
+            [
+              ".promise-item.reveal[data-delay=\"2\"] > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > h3"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "figure[data-delay=\"2\"] > figcaption"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "200% text with values expanded",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".promise-item.reveal[data-delay=\"2\"] > div > h3"
+            ],
+            [
+              ".promise-item.reveal[data-delay=\"2\"] > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > h3"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "figure[data-delay=\"2\"] > figcaption"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 920,
+      "height": 900,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "#hero-title"
+            ],
+            [
+              ".on"
+            ],
+            [
+              ".hero-lede"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "#vision-title"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 920,
+      "height": 900,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "#vision-title"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "state": "200% text",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".nav-cta"
+            ],
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "state": "200% text with values expanded",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".nav-cta"
+            ],
+            [
+              ".on"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "initial",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "#hero-title"
+            ],
+            [
+              ".on"
+            ],
+            [
+              ".hero-lede"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".motion-note"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-describedby=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [],
+      "offscreenControls": []
+    }
+  ],
+  "errors": []
+}

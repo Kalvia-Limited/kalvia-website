@@ -1,0 +1,39 @@
+{
+    "name":  "kalvia-website",
+    "version":  "0.1.0",
+    "private":  true,
+    "scripts":  {
+                    "dev":  "next dev",
+                    "build":  "next build",
+                    "start":  "next start",
+                    "lint":  "eslint .",
+                    "type-check":  "tsc --noEmit",
+                    "test:interactions":  "node scripts/check-interactions.mjs",
+                    "db:setup-local":  "node scripts/setup-local-db.mjs",
+                    "db:migrate":  "node scripts/migrate.mjs",
+                    "db:prune":  "node scripts/prune-contact.mjs",
+                    "test:contact":  "node scripts/check-contact.mjs",
+                    "test:security":  "node scripts/check-security.mjs",
+                    "test:accessibility":  "node scripts/check-accessibility.mjs",
+                    "test:delivery":  "node scripts/check-delivery.mjs"
+                },
+    "dependencies":  {
+                         "next":  "^16.4.2",
+                         "pg":  "^8.23.1",
+                         "react":  "^19.3.1",
+                         "react-dom":  "^19.3.1",
+                         "server-only":  "^0.0.1"
+                     },
+    "devDependencies":  {
+                            "@tailwindcss/postcss":  "^4.3.3",
+                            "@types/node":  "^26.6.5",
+                            "@types/pg":  "^8.23.1",
+                            "@types/react":  "^19.3.0",
+                            "@types/react-dom":  "^19.3.0",
+                            "axe-core":  "^4.14.0",
+                            "eslint":  "^9.39.5",
+                            "eslint-config-next":  "^16.4.2",
+                            "tailwindcss":  "^4.3.3",
+                            "typescript":  "^6.0.3"
+                        }
+}

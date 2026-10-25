@@ -1,0 +1,1290 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kalvia Website</title>
+<meta name="description" content="Kalvia is a professional technical institution that trains, certifies and connects Africa's next generation of business-ready technical professionals.">
+<meta name="theme-color" content="#170C79">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Gochi+Hand&display=swap" rel="stylesheet">
+<style>
+/* Kalvia — brand tokens from the Kalvia Brand Book 2026 */
+:root {
+  --blue-1: #170C79;      /* Kalvia Blue 1 (primary) */
+  --blue-2: #271CC1;      /* Kalvia Blue 2 (primary) */
+  --blue-3: #0A0250;      /* Kalvia Blue 3 */
+  --green-1: #023903;
+  --green-2: #047D06;
+  --yellow: #FFAE00;
+  --passion: #DB213A;
+  --orange: #FF5A00;
+
+  --blue-1-25: #C5C2DD;
+  --blue-1-7: #EDECF5;
+  --blue-2-25: #C9C6EF;
+  --yellow-25: #FFEBBF;
+  --yellow-7: #FFF8EB;
+  --orange-25: #FFD6BF;
+  --orange-7: #FFF3EB;
+  --green-25: #C0DEC1;
+
+  --paper: #FBFAF7;       /* off-white page tone used across the book */
+  --ink: #0A0250;
+  --ink-soft: #4A4670;
+  --white: #fff;
+
+  --font: "Parkinsans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-accent: "Gochi Hand", "Comic Sans MS", cursive; /* stand-in for DK Cool Crayon */
+
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-pill: 999px;
+  --wrap: 1200px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { overflow-x: clip; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.55;
+  overflow-x: clip;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+h1, h2, h3, h4 { font-weight: 700; line-height: 1.08; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.accent { font-family: var(--font-accent); font-weight: 400; letter-spacing: 0; }
+.hl-yellow { color: var(--yellow); }
+.hl-orange { color: var(--orange); }
+
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 6px; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .6em;
+  padding: 1em 2em; border: 0; border-radius: var(--radius-pill);
+  font-weight: 700; font-size: .85rem; letter-spacing: .18em; text-transform: uppercase;
+  text-decoration: none; transition: transform .25s var(--ease), background .25s, box-shadow .25s;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-orange { background: var(--orange); color: var(--white); }
+.btn-orange:hover { background: #ff6d1f; }
+.btn-ghost { background: transparent; color: currentColor; box-shadow: inset 0 0 0 2px currentColor; }
+.btn-blue { background: var(--blue-1); color: var(--white); }
+.btn .arrow { transition: transform .25s var(--ease); }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ---------- Nav ---------- */
+.site-header {
+  position: fixed; inset: calc(16px + env(safe-area-inset-top, 0px)) 0 auto; z-index: 50; pointer-events: none;
+}
+.nav {
+  pointer-events: auto;
+  display: flex; align-items: center; gap: 12px;
+}
+.nav-bar {
+  flex: 1; display: flex; align-items: center; justify-content: space-between;
+  background: var(--white); border-radius: var(--radius-pill);
+  padding: 12px 14px 12px 24px; min-height: 60px;
+  box-shadow: 0 6px 30px rgba(10, 2, 80, .08);
+  transition: box-shadow .3s;
+}
+.site-header.scrolled .nav-bar { box-shadow: 0 10px 40px rgba(10, 2, 80, .18); }
+.brand { display: inline-flex; color: var(--blue-2); text-decoration: none; }
+.brand svg { height: 30px; width: auto; }
+.nav-links { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.nav-links a {
+  display: block; padding: 10px 14px; border-radius: var(--radius-pill);
+  font-weight: 600; font-size: .92rem; color: var(--blue-1); text-decoration: none;
+  transition: background .2s;
+}
+.nav-links a:hover, .nav-links a.active { background: var(--blue-1-7); }
+.nav-cta { margin-left: 8px; padding: .8em 1.5em; }
+.nav-toggle {
+  display: none; width: 60px; height: 60px; border: 0; border-radius: var(--radius-pill);
+  background: var(--white); box-shadow: 0 6px 30px rgba(10, 2, 80, .08);
+  place-items: center;
+}
+.nav-toggle span { display: block; width: 24px; height: 3px; background: var(--orange); border-radius: 3px; margin: 4px auto; transition: transform .3s var(--ease), opacity .2s; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 920px) {
+  .nav-links, .nav-cta { display: none; }
+  .nav-toggle { display: grid; align-content: center; }
+  .nav-bar { padding-left: 20px; }
+  .nav-links.open {
+    display: flex; flex-direction: column; align-items: stretch;
+    position: absolute; top: 76px; left: var(--gutter); right: var(--gutter);
+    background: var(--white); border-radius: var(--radius-md); padding: 12px;
+    box-shadow: 0 20px 50px rgba(10, 2, 80, .2);
+  }
+  .nav-links.open a { padding: 14px 16px; font-size: 1.05rem; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden;
+  background: var(--blue-1); color: var(--white);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  padding: 130px 0 0;
+  z-index: 1;
+}
+.hero-grid {
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: end;
+  min-height: min(720px, 86vh);
+}
+.hero-copy { padding-bottom: clamp(60px, 10vh, 120px); position: relative; z-index: 2; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: .78rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+}
+.eyebrow::before { content: ""; width: 26px; height: 3px; border-radius: 3px; background: currentColor; }
+.hero .eyebrow { color: var(--yellow); margin-bottom: 22px; }
+.hero h1 { font-size: clamp(2.5rem, 5.6vw, 4.6rem); }
+.hero h1 .rotator {
+  display: inline-grid; vertical-align: bottom;
+}
+.hero h1 .rotator > span {
+  grid-area: 1 / 1; color: var(--yellow);
+  transition: transform .6s var(--ease), opacity .6s var(--ease);
+}
+.hero h1 .rotator > span:not(.on) { opacity: 0; transform: translateY(40%); }
+.hero h1 .rotator > span.out { opacity: 0; transform: translateY(-40%); }
+.hero-lede { margin: 24px 0 36px; max-width: 34em; font-size: clamp(1rem, 1.3vw, 1.15rem); color: rgba(255,255,255,.86); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.hero-actions .btn-ghost { color: var(--white); }
+.hero-tag { position: absolute; z-index: 3; right: 6%; top: 18%; transform: rotate(-8deg); font-size: clamp(1.4rem, 2.4vw, 2rem); color: var(--yellow); }
+
+.hero-visual { position: relative; align-self: stretch; display: flex; align-items: flex-end; justify-content: center; }
+.arch {
+  border-radius: 999px 999px var(--radius-md) var(--radius-md);
+}
+.hero-arch {
+  position: absolute; bottom: 0; left: 50%; translate: -50% 0;
+  width: min(86%, 470px); aspect-ratio: 5 / 6; background: var(--yellow);
+}
+.ripple { position: absolute; inset: auto 0 0 50%; translate: -50% 0; width: min(150%, 900px); aspect-ratio: 1; pointer-events: none; }
+.ripple path { fill: none; stroke: var(--blue-2); stroke-width: 2; }
+.hero-photo {
+  position: relative; z-index: 2; width: min(100%, 560px);
+  transform: translateY(var(--py, 0px));
+  transition: transform .1s linear;
+  filter: drop-shadow(0 30px 40px rgba(10, 2, 80, .35));
+}
+.hero-chip {
+  position: absolute; z-index: 3; display: flex; align-items: center; gap: 10px;
+  background: var(--white); color: var(--blue-1); border-radius: var(--radius-pill);
+  padding: 10px 16px 10px 10px; font-weight: 600; font-size: .85rem;
+  box-shadow: 0 14px 30px rgba(10,2,80,.25);
+  animation: float 6s ease-in-out infinite;
+}
+.hero-chip .dot { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; color: var(--white); }
+.hero-chip.c1 { left: -2%; bottom: 34%; }
+.hero-chip.c2 { right: -2%; bottom: 14%; animation-delay: -3s; }
+@keyframes float { 50% { transform: translateY(-12px); } }
+
+@media (max-width: 920px) {
+  .hero { padding-top: 120px; }
+  .hero-grid { grid-template-columns: 1fr; min-height: 0; gap: 0; }
+  .hero-copy { padding-bottom: 40px; }
+  .hero-visual { min-height: 400px; }
+  .hero-tag { display: none; }
+  .hero-chip.c1 { left: 0; } .hero-chip.c2 { right: 0; }
+}
+
+/* ---------- Promise strip ---------- */
+.promise {
+  background: var(--yellow); margin-top: calc(-1 * var(--radius-lg)); padding: calc(var(--radius-lg) + 36px) 0 40px;
+}
+.promise-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.promise-item { display: flex; gap: 14px; align-items: flex-start; color: var(--blue-1); }
+.promise-item .ico { flex: none; width: 46px; height: 46px; border-radius: 50%; background: var(--blue-1); color: var(--yellow); display: grid; place-items: center; }
+.promise-item h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.promise-item p { font-size: .92rem; color: var(--blue-3); opacity: .85; }
+@media (max-width: 760px) { .promise-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Marquee ---------- */
+.marquee { overflow: hidden; padding: 26px 0; background: var(--paper); border-bottom: 1px solid var(--blue-1-7); }
+.marquee-track { display: flex; gap: 48px; width: max-content; animation: marquee 38s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span { font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700; color: var(--blue-1); display: inline-flex; align-items: center; gap: 48px; white-space: nowrap; }
+.marquee-track span::after { content: ""; width: 22px; height: 26px; background: var(--orange); border-radius: 99px 99px 5px 5px; }
+.marquee-track span:nth-child(3n+2)::after { background: var(--yellow); }
+.marquee-track span:nth-child(3n)::after { background: var(--blue-2); }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ---------- Sections ---------- */
+section { position: relative; }
+.section { padding: clamp(80px, 11vw, 140px) 0; }
+.section-head { max-width: 760px; margin-bottom: clamp(40px, 6vw, 64px); }
+.section-head .eyebrow { color: var(--orange); margin-bottom: 18px; }
+.section-head h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); color: var(--blue-1); }
+.section-head p { margin-top: 18px; font-size: 1.1rem; color: var(--ink-soft); max-width: 40em; }
+.on-blue { background: var(--blue-1); color: var(--white); }
+.on-blue .section-head h2 { color: var(--white); }
+.on-blue .section-head p { color: rgba(255,255,255,.8); }
+.on-blue .section-head .eyebrow { color: var(--yellow); }
+
+.js .reveal { transform: translateY(28px); transition: transform .9s var(--ease); }
+.js .reveal.in { opacity: 1; transform: none; }
+.reveal[data-delay="1"] { transition-delay: .1s; }
+.reveal[data-delay="2"] { transition-delay: .2s; }
+.reveal[data-delay="3"] { transition-delay: .3s; }
+
+/* ---------- Cycle (why we exist) ---------- */
+.cycle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.cycle-copy h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); color: var(--blue-1); margin-bottom: 22px; }
+.cycle-copy p { color: var(--ink-soft); font-size: 1.08rem; margin-bottom: 14px; }
+.switch {
+  display: inline-flex; padding: 6px; border-radius: var(--radius-pill); background: var(--blue-1-7); margin: 18px 0 0; position: relative;
+}
+.switch button {
+  position: relative; z-index: 1; border: 0; background: none; padding: 12px 22px; border-radius: var(--radius-pill);
+  font-weight: 700; font-size: .9rem; color: var(--blue-1); transition: color .3s;
+}
+.switch button[aria-pressed="true"] { color: var(--white); }
+.switch .thumb { position: absolute; top: 6px; bottom: 6px; left: 6px; border-radius: var(--radius-pill); background: var(--blue-1); transition: transform .45s var(--ease), width .45s var(--ease), background .45s; }
+.switch.after .thumb { background: var(--orange); }
+
+.cycle { position: relative; aspect-ratio: 1; width: min(100%, 480px); margin: 0 auto; }
+.cycle-ring { position: absolute; inset: 9%; border-radius: 50%; border: 3px dashed var(--blue-1-25); animation: spin 40s linear infinite; transition: border-color .6s; }
+.cycle.after .cycle-ring { border-color: var(--orange); border-style: solid; animation-direction: reverse; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.cycle-center {
+  position: absolute; inset: 31%; display: grid; place-items: center; text-align: center; padding: 10px;
+  border-radius: 999px 999px 18px 18px; background: var(--blue-1-7); color: var(--blue-1); font-weight: 700; font-size: clamp(.9rem, 1.6vw, 1.15rem);
+  transition: background .6s, color .6s;
+}
+.cycle.after .cycle-center { background: var(--blue-1); color: var(--yellow); }
+.cycle-node {
+  position: absolute; width: 34%; aspect-ratio: 1; display: grid; place-items: center; text-align: center; border-radius: 50%;
+  background: var(--white); box-shadow: 0 14px 40px rgba(10,2,80,.12); padding: 8px;
+  transition: background .6s var(--ease), color .6s, transform .6s var(--ease);
+}
+.cycle-node b { display: block; font-size: clamp(1rem, 2vw, 1.35rem); line-height: 1.1; }
+.cycle-node small { display: block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; opacity: .7; margin-top: 4px; }
+.cycle-node:nth-of-type(1) { top: 0; left: 33%; }
+.cycle-node:nth-of-type(2) { bottom: 4%; left: 2%; }
+.cycle-node:nth-of-type(3) { bottom: 4%; right: 2%; }
+.cycle .cycle-node .v-after { display: none; }
+.cycle.after .cycle-node .v-before { display: none; }
+.cycle.after .cycle-node .v-after { display: block; }
+.cycle.after .cycle-node:nth-of-type(1) { background: var(--yellow); color: var(--blue-1); }
+.cycle.after .cycle-node:nth-of-type(2) { background: var(--orange); color: var(--white); }
+.cycle.after .cycle-node:nth-of-type(3) { background: var(--blue-2); color: var(--white); }
+.cycle.flip .cycle-node { transform: scale(.85); }
+@media (max-width: 860px) { .cycle-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Prosperity ripple ---------- */
+.prosper { background: var(--blue-1); color: var(--white); border-radius: var(--radius-lg); overflow: hidden; }
+.prosper-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.ripple-stage { position: relative; aspect-ratio: 1; width: min(100%, 520px); margin: 0 auto; }
+.ripple-stage svg { width: 100%; height: 100%; overflow: visible; }
+.ripple-stage .ring { fill: none; stroke-width: 2.5; transition: stroke .5s, opacity .5s, stroke-width .5s; }
+.ripple-stage .ring.lit { stroke-width: 5; }
+.ripple-stage .core { fill: var(--orange); }
+.ripple-stage .pulse { fill: none; stroke: var(--yellow); stroke-width: 3; opacity: 0; transform-origin: 50% 70%; }
+.ripple-stage .pulse.go { animation: pulse 1.4s var(--ease); }
+@keyframes pulse { 0% { opacity: .9; transform: scale(.3); } 100% { opacity: 0; transform: scale(1.15); } }
+.ripple-label {
+  position: absolute; transform: translate(-50%, -50%); background: var(--white); color: var(--blue-1);
+  border: 0; border-radius: var(--radius-pill); padding: 8px 14px; font-weight: 700; font-size: .82rem; white-space: nowrap;
+  box-shadow: 0 10px 24px rgba(0,0,0,.2); transition: background .3s, color .3s, transform .3s var(--ease);
+}
+.ripple-label:hover { transform: translate(-50%, -50%) scale(1.06); }
+.ripple-label[aria-pressed="true"] { background: var(--yellow); }
+.prosper-panel h3 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 14px; }
+.prosper-panel p { color: rgba(255,255,255,.84); font-size: 1.08rem; }
+.prosper-panel .chain { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; align-items: center; }
+.prosper-panel .chain span { padding: 6px 12px; border-radius: var(--radius-pill); background: rgba(255,255,255,.08); font-size: .82rem; font-weight: 600; transition: background .4s, color .4s; }
+.prosper-panel .chain span.lit { background: var(--yellow); color: var(--blue-1); }
+.prosper-panel .chain i { font-style: normal; opacity: .5; }
+.panel-swap { transition: opacity .35s, transform .35s var(--ease); }
+.panel-swap.swapping { opacity: 0; transform: translateY(10px); }
+.essence { margin-top: 28px; display: inline-flex; align-items: baseline; gap: 12px; color: var(--yellow); font-size: 1.6rem; }
+@media (max-width: 860px) { .prosper-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Brands (Academy / Marketplace) ---------- */
+.brand-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+.brand-tab {
+  display: inline-flex; align-items: center; gap: 12px; border: 0; padding: 12px 22px 12px 12px; border-radius: var(--radius-pill);
+  background: var(--white); box-shadow: inset 0 0 0 2px var(--blue-1-7); font-weight: 700; color: var(--blue-1); transition: background .3s, box-shadow .3s, color .3s;
+}
+.brand-tab .mk { width: 36px; height: 36px; border-radius: 50%; background: var(--blue-1-7); color: var(--blue-2); display: grid; place-items: center; transition: background .3s, color .3s; }
+.brand-tab .mk svg { height: 20px; width: auto; }
+.brand-tab[aria-selected="true"] { background: var(--blue-1); color: var(--white); box-shadow: none; }
+.brand-tab[aria-selected="true"] .mk { background: var(--yellow); color: var(--blue-1); }
+.brand-panel { display: grid; grid-template-columns: 1fr 1.25fr; gap: 24px; }
+.brand-panel[hidden] { display: none; }
+.brand-hero {
+  position: relative; overflow: hidden; border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 44px);
+  min-height: 460px; display: flex; flex-direction: column; justify-content: space-between; color: var(--white);
+}
+.brand-hero.academy { background: var(--orange); }
+.brand-hero.market { background: var(--green-2); }
+.brand-hero .lockup { display: flex; align-items: center; gap: 12px; position: relative; z-index: 2; }
+.brand-hero .lockup svg { height: 34px; width: auto; }
+.brand-hero .lockup span { font-weight: 700; font-size: 1.4rem; padding-left: 12px; border-left: 2px solid rgba(255,255,255,.5); }
+.brand-hero h3 { font-size: clamp(1.8rem, 3vw, 2.5rem); position: relative; z-index: 2; max-width: 11em; }
+.brand-hero p { position: relative; z-index: 2; margin-top: 12px; max-width: 26em; opacity: .92; }
+.brand-hero .bars { position: absolute; right: -40px; top: 0; bottom: 0; width: 30%; display: flex; flex-direction: column; justify-content: space-around; z-index: 1; opacity: .16; }
+.brand-hero .bars i { display: block; height: 40px; background: var(--white); border-radius: 99px 0 0 99px; transition: transform .8s var(--ease); }
+.brand-hero:hover .bars i:nth-child(odd) { transform: translateX(-24px); }
+
+.audience { background: var(--white); border-radius: var(--radius-lg); padding: clamp(24px, 3.5vw, 40px); box-shadow: 0 2px 0 var(--blue-1-7); }
+.aud-tabs { display: flex; gap: 6px; flex-wrap: wrap; border-bottom: 2px solid var(--blue-1-7); margin-bottom: 26px; }
+.aud-tab { border: 0; background: none; padding: 12px 14px; font-weight: 700; color: var(--ink-soft); position: relative; }
+.aud-tab::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: -2px; height: 3px; border-radius: 3px; background: var(--orange); transform: scaleX(0); transition: transform .35s var(--ease); }
+.aud-tab[aria-selected="true"] { color: var(--blue-1); }
+.aud-tab[aria-selected="true"]::after { transform: scaleX(1); }
+.aud-body .who { font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; color: var(--orange); }
+.aud-body h4 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); color: var(--blue-1); margin: 10px 0 14px; }
+.aud-body p { color: var(--ink-soft); }
+.aud-body ul { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
+.aud-body li { display: flex; gap: 12px; align-items: flex-start; }
+.aud-body li::before { content: ""; flex: none; margin-top: 6px; width: 14px; height: 16px; border-radius: 99px 99px 3px 3px; background: var(--yellow); }
+.promise-pill { display: inline-flex; gap: 8px; margin-top: 26px; flex-wrap: wrap; }
+.promise-pill span { padding: 8px 14px; border-radius: var(--radius-pill); background: var(--yellow-25); color: var(--blue-1); font-weight: 700; font-size: .85rem; }
+@media (max-width: 900px) { .brand-panel { grid-template-columns: 1fr; } .brand-hero { min-height: 360px; } }
+
+/* ---------- Journey: Absorb, Apply, Ascend ---------- */
+.journey { background: var(--yellow-7); }
+.journey-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.journey-sticky { position: sticky; top: 110px; }
+.mark-stage {
+  position: relative; aspect-ratio: 5 / 6; width: min(100%, 420px); margin: 0 auto;
+  background: var(--blue-1); display: grid; place-items: center; overflow: hidden;
+}
+.mark-stage .big-mark { width: 52%; color: var(--white); position: relative; z-index: 2; }
+.mark-stage .zone {
+  position: absolute; left: 0; right: 0; z-index: 1; background: var(--orange); opacity: 0;
+  transition: opacity .6s var(--ease), top .6s var(--ease), height .6s var(--ease);
+}
+.mark-stage .step-num { position: absolute; z-index: 3; left: 24px; bottom: 20px; color: var(--yellow); font-size: 2.2rem; }
+.journey-steps { display: grid; gap: 22vh; padding: 10vh 0 20vh; }
+.j-step { opacity: .35; transition: opacity .5s; }
+.j-step.active { opacity: 1; }
+.j-step .tag { display: inline-block; padding: 6px 14px; border-radius: var(--radius-pill); background: var(--blue-1); color: var(--yellow); font-weight: 700; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; }
+.j-step h3 { font-size: clamp(2rem, 4vw, 3.2rem); color: var(--blue-1); margin: 16px 0 14px; }
+.j-step p { font-size: 1.12rem; color: var(--ink-soft); max-width: 28em; }
+@media (max-width: 860px) {
+  .journey-grid { grid-template-columns: 1fr; }
+  .journey-sticky { position: sticky; top: 90px; z-index: 2; }
+  .mark-stage { width: 150px; margin: 0; }
+  .mark-stage .step-num { font-size: 1.2rem; left: 12px; bottom: 8px; }
+  .journey-steps { gap: 30vh; padding: 6vh 0 18vh; }
+}
+
+/* ---------- SOAT ---------- */
+.soat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.seal { width: min(100%, 360px); margin: 0 auto; filter: drop-shadow(0 30px 50px rgba(0,0,0,.35)); transition: transform .2s; transform-style: preserve-3d; }
+.seal-wrap { perspective: 900px; }
+.verify { margin-top: 30px; background: rgba(255,255,255,.07); border-radius: var(--radius-md); padding: 22px; }
+.verify label { display: block; font-weight: 600; margin-bottom: 10px; }
+.verify-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.verify input {
+  flex: 1 1 200px; min-width: 0; padding: 14px 18px; border-radius: var(--radius-pill); border: 2px solid transparent;
+  background: var(--white); color: var(--blue-1); font: inherit; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+}
+.verify input:focus { outline: none; border-color: var(--yellow); }
+.verify .hint { font-size: .82rem; opacity: .7; margin-top: 10px; }
+.verify .hint button { background: none; border: 0; padding: 0; text-decoration: underline; color: var(--yellow); font-weight: 600; }
+.verify-result { margin-top: 18px; display: none; }
+.verify-result.show { display: block; animation: rise .5s var(--ease); }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+.tech-card { display: flex; gap: 16px; align-items: center; background: var(--white); color: var(--blue-1); border-radius: var(--radius-md); padding: 14px; }
+.tech-card .avatar { flex: none; width: 64px; height: 76px; border-radius: 99px 99px 10px 10px; background: var(--yellow); display: grid; place-items: center; font-weight: 700; font-size: 1.3rem; }
+.tech-card h4 { font-size: 1.1rem; }
+.tech-card .meta { font-size: .85rem; color: var(--ink-soft); }
+.tech-card .badge { margin-left: auto; flex: none; padding: 6px 12px; border-radius: var(--radius-pill); font-weight: 700; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.badge.ok { background: var(--green-25); color: var(--green-1); }
+.badge.warn { background: var(--orange-25); color: #9a3000; }
+.verify-msg { padding: 14px 16px; border-radius: var(--radius-md); background: rgba(219,33,58,.18); }
+.soat-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 26px; }
+.soat-facts div { padding: 16px; border-radius: var(--radius-md); background: rgba(255,255,255,.06); }
+.soat-facts b { display: block; font-size: 1.6rem; color: var(--yellow); }
+.soat-facts span { font-size: .85rem; opacity: .8; }
+@media (max-width: 860px) { .soat-grid { grid-template-columns: 1fr; } .soat-facts { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 480px) { .soat-facts { grid-template-columns: 1fr; } .tech-card { flex-wrap: wrap; } .tech-card .badge { margin-left: 0; } }
+
+/* ---------- Path finder ---------- */
+.finder { background: var(--white); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 56px); box-shadow: 0 2px 0 var(--blue-1-7); }
+.finder-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.persona {
+  position: relative; text-align: left; border: 0; border-radius: var(--radius-md); padding: 22px 20px 24px; min-height: 200px;
+  background: var(--blue-1-7); color: var(--blue-1); display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
+  transition: transform .3s var(--ease), background .3s, color .3s;
+}
+.persona:hover { transform: translateY(-4px); }
+.persona .p-ico { width: 52px; height: 60px; border-radius: 99px 99px 10px 10px; display: grid; place-items: center; background: var(--white); color: var(--orange); transition: background .3s, color .3s; }
+.persona b { font-size: 1.15rem; display: block; }
+.persona small { display: block; color: var(--ink-soft); margin-top: 4px; font-size: .9rem; transition: color .3s; }
+.persona[aria-pressed="true"] { background: var(--blue-1); color: var(--white); }
+.persona[aria-pressed="true"] small { color: rgba(255,255,255,.75); }
+.persona[aria-pressed="true"] .p-ico { background: var(--orange); color: var(--white); }
+.finder-out {
+  margin-top: 22px; border-radius: var(--radius-md); background: var(--yellow); color: var(--blue-1); padding: 28px clamp(20px, 3vw, 36px);
+  display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: center;
+}
+.finder-out .kicker { font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; }
+.finder-out h3 { font-size: clamp(1.4rem, 2.6vw, 2rem); margin: 6px 0 8px; }
+@media (max-width: 900px) { .finder-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .finder-grid { grid-template-columns: 1fr; } .persona { min-height: 0; flex-direction: row; align-items: center; } .finder-out { grid-template-columns: 1fr; } }
+
+/* ---------- Values (perforated wall) ---------- */
+.values-wall { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.value {
+  position: relative; border: 0; text-align: left; padding: 0; background: none; perspective: 1000px; min-height: 240px;
+}
+.value-inner { position: absolute; inset: 0; transition: transform .7s var(--ease); transform-style: preserve-3d; }
+.value:hover .value-inner, .value.flipped .value-inner { transform: rotateY(180deg); }
+.value-face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 999px 999px var(--radius-md) var(--radius-md); padding: 0 28px 26px; display: flex; flex-direction: column; justify-content: flex-end; }
+.value-face.front { background: var(--white); color: var(--blue-1); box-shadow: inset 0 0 0 2px var(--blue-1-7), 0 14px 30px rgba(10,2,80,.06); }
+.value-face.front .n { font-size: 2.6rem; color: var(--orange); font-family: var(--font-accent); line-height: 1; }
+.value-face.front h3 { font-size: 1.35rem; margin-top: 6px; }
+.value-face.back { transform: rotateY(180deg); background: var(--orange); color: var(--white); font-size: 1.12rem; font-weight: 600; justify-content: center; text-align: center; padding-top: 40px; }
+.value:nth-child(2) .value-face.back { background: var(--yellow); color: var(--blue-1); }
+.value:nth-child(3) .value-face.back { background: var(--blue-2); }
+.value:nth-child(4) .value-face.back { background: var(--green-2); }
+.value:nth-child(5) .value-face.back { background: var(--passion); }
+.value:nth-child(6) .value-face.back { background: var(--blue-3); }
+@media (max-width: 860px) { .values-wall { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .values-wall { grid-template-columns: 1fr; } .value { min-height: 200px; } }
+
+/* ---------- Vision ---------- */
+.vision { overflow: hidden; background: var(--blue-1); color: var(--white); }
+.vision .ripple-bg { position: absolute; right: -10%; bottom: -30%; width: min(90vw, 900px); opacity: .9; pointer-events: none; }
+.vision .ripple-bg path { fill: none; stroke: var(--orange); stroke-width: 2.4; }
+.vm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; position: relative; z-index: 1; }
+.vm-card { padding: clamp(24px, 4vw, 44px); border-radius: var(--radius-lg); background: rgba(255,255,255,.06); backdrop-filter: blur(6px); }
+.vm-card .k { color: var(--yellow); font-weight: 700; letter-spacing: .18em; text-transform: uppercase; font-size: .8rem; }
+.vm-card p { font-size: clamp(1.25rem, 2.2vw, 1.75rem); font-weight: 600; line-height: 1.3; margin-top: 16px; }
+.voice { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; position: relative; z-index: 1; }
+.voice span { padding: 10px 18px; border-radius: var(--radius-pill); border: 2px solid rgba(255,255,255,.3); font-weight: 700; }
+@media (max-width: 760px) { .vm-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Gallery (arch frames) ---------- */
+.frames { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: end; }
+.frame { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 999px 999px var(--radius-md) var(--radius-md); background: var(--blue-1-7); }
+.frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.frame:hover img { transform: scale(1.06); }
+.frame:nth-child(2) { aspect-ratio: 4 / 5.6; }
+.frame figcaption { position: absolute; left: 14px; right: 14px; bottom: 14px; padding: 12px 16px; border-radius: var(--radius-md); background: var(--white); color: var(--blue-1); font-weight: 700; font-size: .92rem; }
+@media (max-width: 760px) { .frames { grid-template-columns: 1fr 1fr; } .frame:nth-child(3) { display: none; } }
+
+/* ---------- Contact ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(32px, 6vw, 72px); }
+.contact-info h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); color: var(--blue-1); }
+.contact-info .accent { color: var(--orange); font-size: 1.8rem; display: block; margin-bottom: 6px; }
+.contact-info p { color: var(--ink-soft); margin: 18px 0 28px; font-size: 1.08rem; }
+.contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.contact-list li { display: flex; gap: 14px; align-items: center; font-weight: 600; color: var(--blue-1); }
+.contact-list .ico { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--yellow-25); display: grid; place-items: center; color: var(--orange); }
+.contact-list a { text-decoration: none; }
+.contact-list a:hover { text-decoration: underline; }
+form.contact { background: var(--white); border-radius: var(--radius-lg); padding: clamp(24px, 4vw, 44px); display: grid; gap: 16px; box-shadow: 0 2px 0 var(--blue-1-7); }
+.field label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 6px; color: var(--blue-1); }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 14px 16px; border-radius: 14px; border: 2px solid var(--blue-1-7); background: var(--paper);
+  font: inherit; color: var(--ink); transition: border-color .2s, background .2s;
+}
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--blue-2); background: var(--white); }
+.field textarea { min-height: 120px; resize: vertical; }
+.field .err { display: none; color: var(--passion); font-size: .82rem; margin-top: 6px; font-weight: 600; }
+.field.invalid input, .field.invalid select, .field.invalid textarea { border-color: var(--passion); }
+.field.invalid .err { display: block; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips label { margin: 0; }
+.chips input { position: absolute; opacity: 0; pointer-events: none; }
+.chips span { display: inline-block; padding: 10px 16px; border-radius: var(--radius-pill); background: var(--blue-1-7); color: var(--blue-1); font-weight: 600; font-size: .9rem; cursor: pointer; transition: background .2s, color .2s; }
+.chips input:checked + span { background: var(--blue-1); color: var(--white); }
+.chips input:focus-visible + span { outline: 3px solid var(--orange); outline-offset: 2px; }
+.form-done { text-align: center; padding: 40px 10px; }
+.form-done .big { font-size: 3rem; }
+.form-done h3 { color: var(--blue-1); font-size: 1.8rem; margin: 10px 0; }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .row2 { grid-template-columns: 1fr; } }
+
+/* ---------- CTA band + Footer ---------- */
+.cta-band {
+  display: flex; align-items: center; gap: 16px; background: var(--orange); color: var(--white); border-radius: var(--radius-pill);
+  padding: 14px 14px 14px clamp(24px, 4vw, 44px); text-decoration: none; transition: transform .3s var(--ease);
+}
+.cta-band:hover { transform: scale(1.01); }
+.cta-band span { flex: 1; font-size: clamp(1.3rem, 3.4vw, 2.6rem); font-weight: 400; }
+.cta-band .circle { flex: none; width: clamp(56px, 8vw, 92px); aspect-ratio: 1; border-radius: 50%; background: var(--yellow); display: grid; place-items: center; color: var(--orange); box-shadow: 0 0 0 8px rgba(255,255,255,.18); transition: transform .3s var(--ease); }
+.cta-band:hover .circle { transform: rotate(-45deg); }
+footer { background: var(--blue-3); color: rgba(255,255,255,.75); padding: 80px 0 40px; margin-top: 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.foot-grid .brand { color: var(--white); }
+.foot-grid .brand svg { height: 36px; }
+.foot-grid h4 { color: var(--white); font-size: .85rem; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
+.foot-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.foot-grid a { text-decoration: none; }
+.foot-grid a:hover { color: var(--yellow); }
+.foot-tag { margin-top: 18px; font-size: 1.6rem; color: var(--yellow); }
+.foot-bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.12); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .85rem; }
+@media (max-width: 860px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .foot-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Progress + back to top ---------- */
+.progress { position: fixed; top: 0; left: 0; height: 4px; width: 100%; transform-origin: 0 50%; transform: scaleX(var(--p, 0)); background: linear-gradient(90deg, var(--yellow), var(--orange)); z-index: 60; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- Small-screen refinements ---------- */
+@media (max-width: 920px) {
+  .hero h1 .rotator > span:not(:first-child) { display: none; }
+}
+@media (max-width: 520px) {
+  .value { min-height: 170px; }
+  .essence { flex-wrap: wrap; gap: 4px 12px; }
+}
+
+</style>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="k-mark" fill="currentColor" viewBox="241 495 75.2 93.1"><path d="M 278.58 495 C 299.33 495 316.16 511.82 316.16 532.57 L 316.16 577.03 C 316.16 583.14 311.21 588.09 305.10 588.09 L 252.05 588.09 C 245.94 588.09 241 583.14 241 577.03 L 241 532.57 C 241 511.82 257.82 495 278.58 495 Z M 278.58 501.49 C 261.41 501.49 247.49 515.41 247.49 532.57 L 247.49 577.03 C 247.49 579.55 249.53 581.60 252.05 581.60 L 305.10 581.60 C 307.62 581.60 309.67 579.55 309.67 577.03 L 309.67 532.57 C 309.67 515.41 295.75 501.49 278.58 501.49 Z M 278.56 564.90 C 284.14 564.90 290.71 566.23 295.69 567.49 L 296.16 567.61 C 298.49 568.20 300.52 568.79 302 569.24 L 302.55 569.41 C 303.08 569.57 303.52 569.71 303.85 569.82 L 304.35 569.98 C 304.41 570.00 304.48 570.03 304.5 570.03 C 304.50 570.03 304.51 570.03 304.51 570.04 L 304.53 570.04 L 304.55 570.05 L 304.56 570.05 C 306.54 570.73 307.62 572.87 307.00 574.86 L 306.97 574.95 C 306.28 576.96 304.11 578.04 302.10 577.38 L 302.07 577.37 L 302.04 577.36 C 302.04 577.36 302.03 577.36 302.03 577.36 C 302.01 577.35 301.97 577.33 301.92 577.32 C 301.82 577.29 301.67 577.24 301.47 577.17 C 301.07 577.05 300.48 576.86 299.75 576.64 C 298.26 576.18 296.19 575.58 293.80 574.98 C 288.95 573.76 283.15 572.62 278.56 572.62 C 274.12 572.62 268.53 573.69 263.78 574.87 L 263.32 574.98 C 260.94 575.58 258.86 576.18 257.38 576.64 L 257.37 576.64 C 256.64 576.86 256.05 577.05 255.65 577.17 C 255.45 577.24 255.30 577.29 255.19 577.32 L 255.08 577.36 L 255.07 577.36 L 255.06 577.37 L 255.04 577.37 C 253.02 578.05 250.84 576.97 250.16 574.95 C 249.47 572.94 250.54 570.76 252.55 570.06 L 252.58 570.05 L 252.61 570.04 C 252.62 570.03 252.62 570.03 252.62 570.03 C 252.64 570.03 252.71 570.00 252.76 569.98 C 252.88 569.94 253.05 569.89 253.27 569.82 C 253.71 569.68 254.34 569.48 255.13 569.24 C 256.70 568.76 258.90 568.12 261.43 567.49 C 266.42 566.23 272.98 564.90 278.56 564.90 Z M 302.20 546.50 C 304.24 545.89 306.39 547.05 307.01 549.09 L 307.04 549.19 C 307.58 551.20 306.43 553.30 304.42 553.91 L 279.66 561.33 L 279.64 561.33 L 279.43 561.39 L 279.41 561.40 C 278.79 561.53 278.15 561.52 277.54 561.35 L 252.79 554.55 C 250.73 553.98 249.52 551.85 250.09 549.80 L 250.12 549.70 C 250.72 547.70 252.82 546.54 254.84 547.10 L 278.51 553.60 Z M 278.52 531.03 C 282.96 531.03 286.57 534.63 286.57 539.07 C 286.57 543.51 282.96 547.11 278.52 547.11 C 274.08 547.11 270.48 543.51 270.48 539.07 C 270.48 534.63 274.08 531.03 278.52 531.03 Z M 278.53 507.83 C 279.76 507.83 280.89 507.83 281.71 507.84 C 282.12 507.85 282.46 507.85 282.70 507.85 C 282.82 507.85 282.92 507.86 283 507.86 C 283.03 507.86 283.08 507.86 283.12 507.87 C 283.14 507.87 283.18 507.87 283.23 507.88 C 283.25 507.88 283.31 507.89 283.38 507.91 C 283.41 507.91 283.49 507.93 283.57 507.96 C 283.61 507.97 283.82 508.05 284.03 508.23 L 284.12 508.31 L 284.23 508.43 C 284.42 508.66 284.5 508.89 284.51 508.93 C 284.53 509.01 284.55 509.07 284.55 509.10 C 284.57 509.17 284.58 509.22 284.58 509.25 C 284.58 509.30 284.59 509.35 284.59 509.37 C 284.59 509.43 284.60 509.50 284.60 509.57 C 284.60 509.71 284.60 509.89 284.61 510.12 C 284.61 510.56 284.62 511.16 284.62 511.82 C 284.62 512.45 284.63 513.08 284.65 513.60 C 284.66 513.86 284.67 514.08 284.68 514.25 C 284.69 514.39 284.70 514.45 284.70 514.47 C 284.89 515.44 285.79 516.37 286.83 516.60 C 287.48 516.75 288.41 516.57 288.96 516.21 C 288.97 516.20 289.02 516.16 289.11 516.08 C 289.23 515.97 289.39 515.83 289.58 515.65 C 289.96 515.30 290.44 514.84 290.91 514.37 L 292.68 512.62 L 292.80 512.51 C 293.41 512.03 294.29 512.06 294.86 512.62 L 301.23 518.92 C 301.53 519.21 301.69 519.61 301.69 520.02 C 301.69 520.43 301.53 520.83 301.23 521.12 L 299.46 522.87 C 298.99 523.34 298.53 523.81 298.17 524.19 C 297.99 524.37 297.84 524.53 297.73 524.66 C 297.62 524.78 297.59 524.82 297.60 524.80 C 297.51 524.93 297.40 525.17 297.30 525.48 C 297.20 525.80 297.16 526.08 297.16 526.24 C 297.16 527.41 298.01 528.57 299.16 528.93 C 299.18 528.94 299.22 528.94 299.29 528.95 C 299.42 528.96 299.61 528.98 299.86 528.99 C 300.35 529.02 301.03 529.03 301.89 529.04 C 302.62 529.05 303.29 529.06 303.79 529.07 C 304.03 529.08 304.25 529.08 304.40 529.09 C 304.48 529.10 304.56 529.10 304.64 529.11 C 304.67 529.12 304.74 529.12 304.82 529.14 C 304.85 529.15 304.96 529.17 305.08 529.22 C 305.14 529.24 305.28 529.30 305.44 529.41 C 305.55 529.49 305.90 529.77 306.03 530.30 L 306.05 530.41 L 306.07 530.57 C 306.07 530.59 306.07 530.61 306.07 530.62 C 306.07 530.62 306.07 530.63 306.07 530.64 C 306.07 530.64 306.07 530.65 306.07 530.66 C 306.07 530.66 306.07 530.67 306.07 530.69 L 306.07 531.11 C 306.07 531.35 306.07 531.67 306.07 532.07 C 306.08 532.13 306.09 532.20 306.09 532.26 L 306.09 539.69 C 306.09 540.39 305.62 541.00 304.94 541.18 L 294.03 544.04 C 293.50 544.18 292.94 544.03 292.56 543.66 C 292.17 543.28 292.01 542.73 292.12 542.20 C 292.36 541.19 292.48 540.14 292.48 539.07 C 292.48 531.38 286.25 525.15 278.56 525.15 C 270.87 525.15 264.64 531.38 264.64 539.07 C 264.64 540.15 264.76 541.19 264.99 542.20 C 265.11 542.73 264.95 543.28 264.56 543.66 C 264.17 544.03 263.62 544.18 263.09 544.04 L 252.18 541.18 C 251.50 541.00 251.03 540.39 251.03 539.69 L 251.03 532.26 C 251.03 532.23 251.03 532.20 251.03 532.17 L 251.03 530.60 C 251.03 530.19 251.19 529.79 251.48 529.50 C 251.77 529.21 252.17 529.05 252.58 529.05 L 255.01 529.05 L 255.98 529.05 C 256.29 529.04 256.58 529.03 256.85 529.02 C 257.12 529.01 257.34 529.00 257.51 528.99 C 257.66 528.98 257.74 528.97 257.75 528.97 C 258.77 528.77 259.67 527.91 259.89 526.88 C 260.05 526.16 259.89 525.32 259.53 524.80 C 259.52 524.79 259.48 524.75 259.40 524.66 C 259.29 524.53 259.14 524.37 258.96 524.19 C 258.60 523.81 258.14 523.34 257.66 522.87 L 255.89 521.12 C 255.60 520.83 255.43 520.43 255.43 520.02 C 255.44 519.61 255.60 519.21 255.89 518.92 L 262.26 512.63 C 262.86 512.04 263.82 512.03 264.42 512.62 L 266.39 514.51 L 267.14 515.23 C 267.77 515.83 268.10 516.12 268.35 516.30 C 268.53 516.42 268.60 516.46 269.12 516.56 C 270.64 516.87 272.15 515.84 272.44 514.41 C 272.44 514.39 272.45 514.32 272.45 514.21 C 272.46 514.05 272.48 513.83 272.48 513.57 C 272.50 513.06 272.51 512.42 272.51 511.78 L 272.51 509.38 C 272.51 508.97 272.67 508.57 272.96 508.28 C 273.25 508 273.65 507.83 274.06 507.83 Z M 278.53 507.83 "/></symbol>
+  <symbol id="k-logo" fill="currentColor" viewBox="241 495 260.2 93.1"><path d="M 278.58 495 C 299.33 495 316.16 511.82 316.16 532.57 L 316.16 577.03 C 316.16 583.14 311.21 588.09 305.10 588.09 L 252.05 588.09 C 245.94 588.09 241 583.14 241 577.03 L 241 532.57 C 241 511.82 257.82 495 278.58 495 Z M 278.58 501.49 C 261.41 501.49 247.49 515.41 247.49 532.57 L 247.49 577.03 C 247.49 579.55 249.53 581.60 252.05 581.60 L 305.10 581.60 C 307.62 581.60 309.67 579.55 309.67 577.03 L 309.67 532.57 C 309.67 515.41 295.75 501.49 278.58 501.49 Z M 278.56 564.90 C 284.14 564.90 290.71 566.23 295.69 567.49 L 296.16 567.61 C 298.49 568.20 300.52 568.79 302 569.24 L 302.55 569.41 C 303.08 569.57 303.52 569.71 303.85 569.82 L 304.35 569.98 C 304.41 570.00 304.48 570.03 304.5 570.03 C 304.50 570.03 304.51 570.03 304.51 570.04 L 304.53 570.04 L 304.55 570.05 L 304.56 570.05 C 306.54 570.73 307.62 572.87 307.00 574.86 L 306.97 574.95 C 306.28 576.96 304.11 578.04 302.10 577.38 L 302.07 577.37 L 302.04 577.36 C 302.04 577.36 302.03 577.36 302.03 577.36 C 302.01 577.35 301.97 577.33 301.92 577.32 C 301.82 577.29 301.67 577.24 301.47 577.17 C 301.07 577.05 300.48 576.86 299.75 576.64 C 298.26 576.18 296.19 575.58 293.80 574.98 C 288.95 573.76 283.15 572.62 278.56 572.62 C 274.12 572.62 268.53 573.69 263.78 574.87 L 263.32 574.98 C 260.94 575.58 258.86 576.18 257.38 576.64 L 257.37 576.64 C 256.64 576.86 256.05 577.05 255.65 577.17 C 255.45 577.24 255.30 577.29 255.19 577.32 L 255.08 577.36 L 255.07 577.36 L 255.06 577.37 L 255.04 577.37 C 253.02 578.05 250.84 576.97 250.16 574.95 C 249.47 572.94 250.54 570.76 252.55 570.06 L 252.58 570.05 L 252.61 570.04 C 252.62 570.03 252.62 570.03 252.62 570.03 C 252.64 570.03 252.71 570.00 252.76 569.98 C 252.88 569.94 253.05 569.89 253.27 569.82 C 253.71 569.68 254.34 569.48 255.13 569.24 C 256.70 568.76 258.90 568.12 261.43 567.49 C 266.42 566.23 272.98 564.90 278.56 564.90 Z M 302.20 546.50 C 304.24 545.89 306.39 547.05 307.01 549.09 L 307.04 549.19 C 307.58 551.20 306.43 553.30 304.42 553.91 L 279.66 561.33 L 279.64 561.33 L 279.43 561.39 L 279.41 561.40 C 278.79 561.53 278.15 561.52 277.54 561.35 L 252.79 554.55 C 250.73 553.98 249.52 551.85 250.09 549.80 L 250.12 549.70 C 250.72 547.70 252.82 546.54 254.84 547.10 L 278.51 553.60 Z M 278.52 531.03 C 282.96 531.03 286.57 534.63 286.57 539.07 C 286.57 543.51 282.96 547.11 278.52 547.11 C 274.08 547.11 270.48 543.51 270.48 539.07 C 270.48 534.63 274.08 531.03 278.52 531.03 Z M 278.53 507.83 C 279.76 507.83 280.89 507.83 281.71 507.84 C 282.12 507.85 282.46 507.85 282.70 507.85 C 282.82 507.85 282.92 507.86 283 507.86 C 283.03 507.86 283.08 507.86 283.12 507.87 C 283.14 507.87 283.18 507.87 283.23 507.88 C 283.25 507.88 283.31 507.89 283.38 507.91 C 283.41 507.91 283.49 507.93 283.57 507.96 C 283.61 507.97 283.82 508.05 284.03 508.23 L 284.12 508.31 L 284.23 508.43 C 284.42 508.66 284.5 508.89 284.51 508.93 C 284.53 509.01 284.55 509.07 284.55 509.10 C 284.57 509.17 284.58 509.22 284.58 509.25 C 284.58 509.30 284.59 509.35 284.59 509.37 C 284.59 509.43 284.60 509.50 284.60 509.57 C 284.60 509.71 284.60 509.89 284.61 510.12 C 284.61 510.56 284.62 511.16 284.62 511.82 C 284.62 512.45 284.63 513.08 284.65 513.60 C 284.66 513.86 284.67 514.08 284.68 514.25 C 284.69 514.39 284.70 514.45 284.70 514.47 C 284.89 515.44 285.79 516.37 286.83 516.60 C 287.48 516.75 288.41 516.57 288.96 516.21 C 288.97 516.20 289.02 516.16 289.11 516.08 C 289.23 515.97 289.39 515.83 289.58 515.65 C 289.96 515.30 290.44 514.84 290.91 514.37 L 292.68 512.62 L 292.80 512.51 C 293.41 512.03 294.29 512.06 294.86 512.62 L 301.23 518.92 C 301.53 519.21 301.69 519.61 301.69 520.02 C 301.69 520.43 301.53 520.83 301.23 521.12 L 299.46 522.87 C 298.99 523.34 298.53 523.81 298.17 524.19 C 297.99 524.37 297.84 524.53 297.73 524.66 C 297.62 524.78 297.59 524.82 297.60 524.80 C 297.51 524.93 297.40 525.17 297.30 525.48 C 297.20 525.80 297.16 526.08 297.16 526.24 C 297.16 527.41 298.01 528.57 299.16 528.93 C 299.18 528.94 299.22 528.94 299.29 528.95 C 299.42 528.96 299.61 528.98 299.86 528.99 C 300.35 529.02 301.03 529.03 301.89 529.04 C 302.62 529.05 303.29 529.06 303.79 529.07 C 304.03 529.08 304.25 529.08 304.40 529.09 C 304.48 529.10 304.56 529.10 304.64 529.11 C 304.67 529.12 304.74 529.12 304.82 529.14 C 304.85 529.15 304.96 529.17 305.08 529.22 C 305.14 529.24 305.28 529.30 305.44 529.41 C 305.55 529.49 305.90 529.77 306.03 530.30 L 306.05 530.41 L 306.07 530.57 C 306.07 530.59 306.07 530.61 306.07 530.62 C 306.07 530.62 306.07 530.63 306.07 530.64 C 306.07 530.64 306.07 530.65 306.07 530.66 C 306.07 530.66 306.07 530.67 306.07 530.69 L 306.07 531.11 C 306.07 531.35 306.07 531.67 306.07 532.07 C 306.08 532.13 306.09 532.20 306.09 532.26 L 306.09 539.69 C 306.09 540.39 305.62 541.00 304.94 541.18 L 294.03 544.04 C 293.50 544.18 292.94 544.03 292.56 543.66 C 292.17 543.28 292.01 542.73 292.12 542.20 C 292.36 541.19 292.48 540.14 292.48 539.07 C 292.48 531.38 286.25 525.15 278.56 525.15 C 270.87 525.15 264.64 531.38 264.64 539.07 C 264.64 540.15 264.76 541.19 264.99 542.20 C 265.11 542.73 264.95 543.28 264.56 543.66 C 264.17 544.03 263.62 544.18 263.09 544.04 L 252.18 541.18 C 251.50 541.00 251.03 540.39 251.03 539.69 L 251.03 532.26 C 251.03 532.23 251.03 532.20 251.03 532.17 L 251.03 530.60 C 251.03 530.19 251.19 529.79 251.48 529.50 C 251.77 529.21 252.17 529.05 252.58 529.05 L 255.01 529.05 L 255.98 529.05 C 256.29 529.04 256.58 529.03 256.85 529.02 C 257.12 529.01 257.34 529.00 257.51 528.99 C 257.66 528.98 257.74 528.97 257.75 528.97 C 258.77 528.77 259.67 527.91 259.89 526.88 C 260.05 526.16 259.89 525.32 259.53 524.80 C 259.52 524.79 259.48 524.75 259.40 524.66 C 259.29 524.53 259.14 524.37 258.96 524.19 C 258.60 523.81 258.14 523.34 257.66 522.87 L 255.89 521.12 C 255.60 520.83 255.43 520.43 255.43 520.02 C 255.44 519.61 255.60 519.21 255.89 518.92 L 262.26 512.63 C 262.86 512.04 263.82 512.03 264.42 512.62 L 266.39 514.51 L 267.14 515.23 C 267.77 515.83 268.10 516.12 268.35 516.30 C 268.53 516.42 268.60 516.46 269.12 516.56 C 270.64 516.87 272.15 515.84 272.44 514.41 C 272.44 514.39 272.45 514.32 272.45 514.21 C 272.46 514.05 272.48 513.83 272.48 513.57 C 272.50 513.06 272.51 512.42 272.51 511.78 L 272.51 509.38 C 272.51 508.97 272.67 508.57 272.96 508.28 C 273.25 508 273.65 507.83 274.06 507.83 Z M 278.53 507.83 "/><path d="M 337.60 565.71 L 337.60 522.78 L 344.72 522.78 L 344.72 540.76 C 348.08 540.76 351.01 540.03 353.51 538.59 C 356.00 537.11 357.98 535.03 359.43 532.35 C 360.89 529.68 361.72 526.49 361.93 522.78 L 369.54 522.78 C 369.5 525.01 369.04 527.25 368.16 529.51 C 367.33 531.74 366.23 533.82 364.86 535.75 C 363.49 537.69 361.99 539.35 360.37 540.76 C 358.75 542.16 357.13 543.12 355.51 543.66 C 358.12 544.48 360.53 545.90 362.74 547.92 C 364.98 549.90 366.83 552.39 368.29 555.39 C 369.75 558.40 370.62 561.83 370.91 565.71 L 363.30 565.71 C 363.05 561.63 362.10 558.19 360.43 555.39 C 358.81 552.55 356.65 550.39 353.94 548.91 C 351.28 547.42 348.21 546.69 344.72 546.69 L 344.72 565.71 Z M 337.60 565.71 "/><path d="M 385.57 566.14 C 382.58 566.14 379.86 565.42 377.41 563.98 C 374.99 562.5 373.06 560.46 371.60 557.86 C 370.19 555.23 369.48 552.16 369.48 548.66 C 369.48 545.16 370.19 542.12 371.60 539.52 C 373.06 536.89 374.99 534.85 377.41 533.41 C 379.86 531.96 382.58 531.25 385.57 531.25 C 388.40 531.25 390.87 531.94 393 533.34 C 395.12 534.70 396.65 536.60 397.61 539.03 L 397.61 531.67 L 404.78 531.67 L 404.78 565.71 L 401.60 565.71 C 400.44 565.71 399.48 565.33 398.73 564.60 C 397.98 563.85 397.61 562.91 397.61 561.75 L 397.61 558.30 C 396.65 560.73 395.12 562.64 393 564.04 C 390.87 565.44 388.40 566.14 385.57 566.14 Z M 387.19 560.03 C 388.98 560.03 390.67 559.59 392.25 558.73 C 393.83 557.86 395.12 556.59 396.11 554.90 C 397.11 553.17 397.61 551.09 397.61 548.66 C 397.61 546.19 397.11 544.13 396.11 542.48 C 395.12 540.80 393.83 539.52 392.25 538.66 C 390.67 537.79 388.98 537.36 387.19 537.36 C 385.45 537.36 383.76 537.79 382.14 538.66 C 380.56 539.52 379.28 540.80 378.28 542.48 C 377.28 544.13 376.78 546.19 376.78 548.66 C 376.78 551.09 377.28 553.17 378.28 554.90 C 379.28 556.59 380.56 557.86 382.14 558.73 C 383.76 559.59 385.45 560.03 387.19 560.03 Z M 387.19 560.03 "/><path d="M 407.92 557.92 L 407.92 522.63 L 415.03 522.63 L 415.03 557.31 C 415.03 558.21 415.30 558.91 415.85 559.41 C 416.39 559.90 417.03 560.15 417.78 560.15 C 418.28 560.15 418.71 560.07 419.09 559.90 L 420.58 565.09 C 419.38 565.79 417.94 566.14 416.28 566.14 C 414.95 566.14 413.64 565.87 412.35 565.33 C 411.07 564.76 410.00 563.87 409.17 562.68 C 408.34 561.44 407.92 559.86 407.92 557.92 Z M 407.92 557.92 "/><path d="M 425.69 531.67 L 435.42 559.41 L 445.15 531.67 L 452.69 531.67 L 439.60 565.71 L 431.12 565.71 L 418.08 531.67 Z M 425.69 531.67 "/><path d="M 455.74 565.71 L 455.74 531.67 L 462.85 531.67 L 462.85 565.71 Z M 455.74 565.71 "/><path d="M 481.90 566.14 C 478.91 566.14 476.18 565.42 473.73 563.98 C 471.32 562.5 469.39 560.46 467.93 557.86 C 466.52 555.23 465.81 552.16 465.81 548.66 C 465.81 545.16 466.52 542.12 467.93 539.52 C 469.39 536.89 471.32 534.85 473.73 533.41 C 476.18 531.96 478.91 531.25 481.90 531.25 C 484.73 531.25 487.20 531.94 489.32 533.34 C 491.44 534.70 492.98 536.60 493.94 539.03 L 493.94 531.67 L 501.11 531.67 L 501.11 565.71 L 497.93 565.71 C 496.76 565.71 495.81 565.33 495.06 564.60 C 494.31 563.85 493.94 562.91 493.94 561.75 L 493.94 558.30 C 492.98 560.73 491.44 562.64 489.32 564.04 C 487.20 565.44 484.73 566.14 481.90 566.14 Z M 483.52 560.03 C 485.31 560.03 487 559.59 488.57 558.73 C 490.16 557.86 491.44 556.59 492.44 554.90 C 493.44 553.17 493.94 551.09 493.94 548.66 C 493.94 546.19 493.44 544.13 492.44 542.48 C 491.44 540.80 490.16 539.52 488.57 538.66 C 487 537.79 485.31 537.36 483.52 537.36 C 481.78 537.36 480.09 537.79 478.47 538.66 C 476.89 539.52 475.60 540.80 474.60 542.48 C 473.61 544.13 473.11 546.19 473.11 548.66 C 473.11 551.09 473.61 553.17 474.60 554.90 C 475.60 556.59 476.89 557.86 478.47 558.73 C 480.09 559.59 481.78 560.03 483.52 560.03 Z M 483.52 560.03 "/><path d="M 463.75 524.71 C 463.75 527.14 461.78 529.11 459.35 529.11 C 456.92 529.11 454.95 527.14 454.95 524.71 C 454.95 522.28 456.92 520.31 459.35 520.31 C 461.78 520.31 463.75 522.28 463.75 524.71 Z M 463.75 524.71 "/></symbol>
+</svg>
+
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <div class="nav-bar">
+        <a class="brand" href="#top" aria-label="Kalvia home"><svg viewBox="0 0 260.2 93.1" style="height:30px"><use href="#k-logo"/></svg></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#academy">Academy</a></li>
+          <li><a href="#academy" data-brand="market">Marketplace</a></li>
+          <li><a href="#soat">SOAT</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-orange nav-cta" href="#finder">Get started</a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Kalvia · Lagos, Nigeria</span>
+      <h1 id="hero-title">Africa's next class of
+        <span class="rotator" aria-live="polite">
+          <span class="on">technical professionals</span>
+          <span>solar installers</span>
+          <span>electricians</span>
+          <span>plumbers</span>
+          <span>HVAC technicians</span>
+        </span>
+        starts here!</h1>
+      <p class="hero-lede">We train people who can build, manage, and lead: technically capable on the worksite, professionally equipped at the client meeting.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="#finder">Get started <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="#about">Why Kalvia</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="ripple" id="hero-ripple" viewBox="0 0 600 600" aria-hidden="true"></svg>
+      <div class="hero-arch arch" aria-hidden="true"></div>
+      <img class="hero-photo" src="assets/hero-team.webp" width="1200" height="689" alt="Three Kalvia trainees in workwear, one holding a power tool">
+      <div class="hero-chip c1"><span class="dot" style="background:var(--orange)">✓</span>Certified with SOAT</div>
+      <div class="hero-chip c2"><span class="dot" style="background:var(--blue-2)">★</span>Business-ready</div>
+    </div>
+  </div>
+  <span class="hero-tag accent" aria-hidden="true">Enabling prosperity!</span>
+</section>
+
+<!-- PROMISE STRIP -->
+<section class="promise" aria-label="What Kalvia promises">
+  <div class="wrap promise-grid">
+    <div class="promise-item reveal">
+      <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg></span>
+      <div><h3>Mastery, built in</h3><p>Practical, career-relevant training in the trades and the professional skills around them.</p></div>
+    </div>
+    <div class="promise-item reveal" data-delay="1">
+      <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <div><h3>Trust you can see</h3><p>The SOAT seal gives customers a visible, renewable reason to trust a technician.</p></div>
+    </div>
+    <div class="promise-item reveal" data-delay="2">
+      <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 21V11a7 7 0 0 1 14 0v10"/><path d="M3 21h18"/><path d="M12 14v4"/></svg></span>
+      <div><h3>Access to opportunity</h3><p>Jobs, clients and the systems to manage them, through Kalvia Marketplace.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Mastery</span><span>Ethics</span><span>Access</span><span>Confidence</span><span>Assurance</span><span>Quality</span><span>Growth</span><span>Impact</span>
+    <span>Mastery</span><span>Ethics</span><span>Access</span><span>Confidence</span><span>Assurance</span><span>Quality</span><span>Growth</span><span>Impact</span>
+  </div>
+</div>
+
+<!-- WHY WE EXIST -->
+<section class="section" id="about" aria-labelledby="why-title">
+  <div class="wrap cycle-grid">
+    <div class="cycle-copy reveal">
+      <span class="eyebrow" style="color:var(--orange);margin-bottom:18px">Why we exist</span>
+      <h2 id="why-title">Technical education was underbuilt. That is fixable.</h2>
+      <p>Africa's technical workforce is enormous in number and underserved in quality. Young people enter the trade economy without structure, without credentials, and without the professional formation that turns skill into a career.</p>
+      <p>The result is a cycle that has nothing to do with the ability of the people in it, and everything to do with the absence of the right institutions. <strong>Kalvia exists to break that cycle.</strong></p>
+      <div class="switch" role="group" aria-label="Show the cycle">
+        <span class="thumb" aria-hidden="true"></span>
+        <button type="button" aria-pressed="true" data-cycle="before">The old cycle</button>
+        <button type="button" aria-pressed="false" data-cycle="after">With Kalvia</button>
+      </div>
+    </div>
+    <div class="cycle reveal" data-delay="1" id="cycle" aria-live="polite">
+      <div class="cycle-ring" aria-hidden="true"></div>
+      <div class="cycle-node"><div><b class="v-before">Low trust</b><b class="v-after">Earned trust</b><small>Customers</small></div></div>
+      <div class="cycle-node"><div><b class="v-before">Low pay</b><b class="v-after">Fair pay</b><small>Technicians</small></div></div>
+      <div class="cycle-node"><div><b class="v-before">Low aspiration</b><b class="v-after">Real careers</b><small>Young people</small></div></div>
+      <div class="cycle-center"><span class="v-before">No structure, no credentials</span><span class="v-after" hidden>Training, SOAT &amp; access</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROSPERITY RIPPLE -->
+<section class="section" style="padding-top:0" aria-labelledby="prosper-title">
+  <div class="wrap">
+    <div class="prosper section" style="padding-left:var(--gutter);padding-right:var(--gutter)">
+      <div class="prosper-grid">
+        <div class="ripple-stage reveal" id="ripple-stage">
+          <svg viewBox="0 0 500 500" id="ripple-svg" aria-hidden="true"></svg>
+        </div>
+        <div class="prosper-panel">
+          <span class="eyebrow" style="color:var(--yellow);margin-bottom:18px">The chain of prosperity</span>
+          <h2 id="prosper-title" class="sr-only">The chain of prosperity</h2>
+          <div class="panel-swap" id="prosper-copy" aria-live="polite">
+            <h3>Students prosper</h3>
+            <p>By gaining the skills, knowledge and opportunities needed to build meaningful, sustainable careers.</p>
+          </div>
+          <div class="chain" id="chain" aria-hidden="true">
+            <span>People</span><i>→</i><span>Businesses</span><i>→</i><span>Families</span><i>→</i><span>Society</span>
+          </div>
+          <p style="margin-top:22px;color:rgba(255,255,255,.7);font-size:.95rem">Tap a ring to follow the ripple. When our people prosper, our businesses prosper. When our businesses prosper, our society prospers.</p>
+          <div class="essence"><span class="accent">Our essence:</span><strong style="font-size:1.4rem;color:var(--white)">Enabling Prosperity</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOUSE OF BRANDS -->
+<section class="section" id="academy" style="padding-top:0" aria-labelledby="brands-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">One Kalvia, two ways in</span>
+      <h2 id="brands-title">Learn the craft. Then find the work.</h2>
+      <p>Kalvia Academy builds the professional. Kalvia Marketplace connects them with the customers and businesses who need them.</p>
+    </div>
+
+    <div class="brand-tabs" role="tablist" aria-label="Kalvia offerings">
+      <button class="brand-tab" role="tab" id="tab-academy" aria-selected="true" aria-controls="panel-academy" data-brand="academy">
+        <span class="mk"><svg viewBox="0 0 75.2 93.1"><use href="#k-mark"/></svg></span>Kalvia Academy</button>
+      <button class="brand-tab" role="tab" id="tab-market" aria-selected="false" aria-controls="panel-market" data-brand="market" tabindex="-1">
+        <span class="mk"><svg viewBox="0 0 75.2 93.1"><use href="#k-mark"/></svg></span>Kalvia Marketplace</button>
+    </div>
+
+    <div class="brand-panel" id="panel-academy" role="tabpanel" aria-labelledby="tab-academy">
+      <div class="brand-hero academy reveal">
+        <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="lockup"><svg viewBox="0 0 260.2 93.1"><use href="#k-logo"/></svg><span>Academy</span></div>
+        <div>
+          <h3>The magic of mastery.</h3>
+          <p>Thorough training, strong structures and practical systems that develop technical competence and the professional skills the trade has been missing.</p>
+          <a class="btn btn-blue" style="margin-top:22px" href="#contact" data-interest="Academy">Apply to the Academy <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="audience reveal" data-delay="1" data-audience="academy"></div>
+    </div>
+
+    <div class="brand-panel" id="panel-market" role="tabpanel" aria-labelledby="tab-market" hidden>
+      <div class="brand-hero market">
+        <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="lockup"><svg viewBox="0 0 260.2 93.1"><use href="#k-logo"/></svg><span>Marketplace</span></div>
+        <div>
+          <h3>Peace of mind, assured quality.</h3>
+          <p>A structured pool of certified technicians, with systems for placement, invoicing and tracking built in.</p>
+          <a class="btn btn-orange" style="margin-top:22px" href="#contact" data-interest="Marketplace">Hire a technician <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="audience" data-audience="market"></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="section journey" aria-labelledby="journey-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Read our mark from the bottom up</span>
+      <h2 id="journey-title">Absorb. Apply. Ascend.</h2>
+      <p>Our logo tells the story of every Kalvia professional: knowledge enters through the open book, is transformed through skilled work, and produces someone who sees what others cannot.</p>
+    </div>
+    <div class="journey-grid">
+      <div class="journey-sticky">
+        <div class="mark-stage arch" id="mark-stage">
+          <div class="zone" id="mark-zone"></div>
+          <svg class="big-mark" viewBox="0 0 75.2 93.1" aria-hidden="true"><use href="#k-mark"/></svg>
+          <span class="step-num accent" id="step-num">01</span>
+        </div>
+      </div>
+      <div class="journey-steps">
+        <article class="j-step active" data-zone="book">
+          <span class="tag">01 · The open book</span>
+          <h3>Absorb</h3>
+          <p>The book faces upward, pages ready to receive. Every Kalvia student begins here, taking in the foundations of their craft.</p>
+        </article>
+        <article class="j-step" data-zone="gear">
+          <span class="tag">02 · The gear</span>
+          <h3>Apply</h3>
+          <p>Theory becomes practice. Knowledge becomes skill. In the workshop, the student becomes a maker.</p>
+        </article>
+        <article class="j-step" data-zone="eye">
+          <span class="tag">03 · The seeing eye</span>
+          <h3>Ascend</h3>
+          <p>The enlightened professional emerges: technically skilled, customer-trained, career-ready, with credentials recognised wherever opportunity exists.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOAT -->
+<section class="section on-blue" id="soat" aria-labelledby="soat-title">
+  <div class="wrap soat-grid">
+    <div class="seal-wrap reveal">
+      <svg class="seal" id="seal" viewBox="0 0 320 380" aria-hidden="true">
+        <path d="M160 8 L300 58 V190 C300 280 236 340 160 372 C84 340 20 280 20 190 V58 Z" fill="#FFAE00"/>
+        <path d="M160 30 L282 73 V190 C282 268 226 320 160 350 C94 320 38 268 38 190 V73 Z" fill="#170C79"/>
+        <g transform="translate(118 74) scale(1.12)" fill="#fff"><svg x="0" y="0" width="75" height="93" viewBox="0 0 75.2 93.1"><use href="#k-mark"/></svg></g>
+        <text x="160" y="238" text-anchor="middle" font-family="Parkinsans, sans-serif" font-weight="800" font-size="58" fill="#FFAE00" letter-spacing="4">SOAT</text>
+        <text x="160" y="262" text-anchor="middle" font-family="Parkinsans, sans-serif" font-weight="600" font-size="9.5" fill="#fff" letter-spacing="1">SEAL OF AUTHORISED TECHNICIAN</text>
+        <text x="160" y="290" text-anchor="middle" font-family="Parkinsans, sans-serif" font-weight="700" font-size="13" fill="#FF5A00" letter-spacing="3">KALVIA CERTIFIED</text>
+      </svg>
+    </div>
+    <div class="reveal" data-delay="1">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">The Kalvian seal</span>
+        <h2 id="soat-title">SOAT: trust, made visible.</h2>
+        <p>The Seal of Authorised Technician carries the trust Kalvia transfers to a technician, and gives customers a visible reason to trust them. It's valid for one year; renewal means passing Kalvia's theory and practical tests again.</p>
+      </div>
+      <div class="soat-facts">
+        <div><b data-count="12">0</b><span>months of validity per seal</span></div>
+        <div><b>2</b><span>tests to renew: theory and practical</span></div>
+        <div><b>1</b><span>visible reason to trust</span></div>
+      </div>
+      <form class="verify" id="verify" novalidate>
+        <label for="soat-id">Check a technician's seal</label>
+        <div class="verify-row">
+          <input id="soat-id" name="soat-id" placeholder="e.g. KA17/A" autocomplete="off" aria-describedby="soat-hint">
+          <button class="btn btn-orange" type="submit">Verify</button>
+        </div>
+        <p class="hint" id="soat-hint">Preview with sample IDs: <button type="button" data-try="KA17/A">KA17/A</button> · <button type="button" data-try="KA09/C">KA09/C</button>. Sample data only; live verification connects to Kalvia's register.</p>
+        <div class="verify-result" id="verify-result" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- PATH FINDER -->
+<section class="section" id="finder" aria-labelledby="finder-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Start enabling prosperity</span>
+      <h2 id="finder-title">Who are you here as?</h2>
+      <p>Pick the one that fits and we'll point you to the right door.</p>
+    </div>
+    <div class="finder reveal">
+      <div class="finder-grid" role="group" aria-label="Choose who you are">
+        <button class="persona" type="button" aria-pressed="true" data-persona="student">
+          <span class="p-ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg></span>
+          <span><b>A student</b><small>I want practical skills and a real career.</small></span></button>
+        <button class="persona" type="button" aria-pressed="false" data-persona="sponsor">
+          <span class="p-ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span><b>A parent or sponsor</b><small>I want a better future for someone I support.</small></span></button>
+        <button class="persona" type="button" aria-pressed="false" data-persona="tech">
+          <span class="p-ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/></svg></span>
+          <span><b>A technician</b><small>I want steady jobs and clients.</small></span></button>
+        <button class="persona" type="button" aria-pressed="false" data-persona="org">
+          <span class="p-ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-5h6v5"/><path d="M9 10h.01M15 10h.01"/></svg></span>
+          <span><b>A business</b><small>I need skilled people or want measurable impact.</small></span></button>
+      </div>
+      <div class="finder-out panel-swap" id="finder-out" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section" style="padding-top:0" aria-labelledby="values-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How we behave</span>
+      <h2 id="values-title">Six values, built like a perforated wall.</h2>
+      <p>Air and light pass through. So do ideas and opportunity. Hover or tap a value to see what it means in practice.</p>
+    </div>
+    <div class="values-wall">
+      <button class="value reveal" type="button"><span class="value-inner"><span class="value-face front"><span class="n">01</span><h3>Respect the Work and the Worker</h3></span><span class="value-face back">We value every trade and treat every person with dignity.</span></span></button>
+      <button class="value reveal" data-delay="1" type="button"><span class="value-inner"><span class="value-face front"><span class="n">02</span><h3>Pursue Mastery</h3></span><span class="value-face back">We build competence, practise consistently and strive for excellence.</span></span></button>
+      <button class="value reveal" data-delay="2" type="button"><span class="value-inner"><span class="value-face front"><span class="n">03</span><h3>Own the Outcome</h3></span><span class="value-face back">We take responsibility, follow through and focus on results.</span></span></button>
+      <button class="value reveal" type="button"><span class="value-inner"><span class="value-face front"><span class="n">04</span><h3>Earn Trust Every Day</h3></span><span class="value-face back">We act with integrity, communicate honestly and keep our word.</span></span></button>
+      <button class="value reveal" data-delay="1" type="button"><span class="value-inner"><span class="value-face front"><span class="n">05</span><h3>Serve with Professionalism</h3></span><span class="value-face back">We listen, communicate clearly and deliver quality work.</span></span></button>
+      <button class="value reveal" data-delay="2" type="button"><span class="value-inner"><span class="value-face front"><span class="n">06</span><h3>Advance Together</h3></span><span class="value-face back">We stay curious, embrace technology and grow through collaboration.</span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" style="padding-top:0" aria-label="Kalvia in the field">
+  <div class="wrap frames">
+    <figure class="frame reveal" style="margin:0"><img src="assets/machinist.webp" alt="A technician adjusting a machine in a workshop" loading="lazy" width="733" height="1100"><figcaption>Theory becomes practice</figcaption></figure>
+    <figure class="frame reveal" data-delay="1" style="margin:0"><img src="assets/workshop.webp" alt="A carpenter shaping wood with a chisel" loading="lazy" width="733" height="1100"><figcaption>Respect the work</figcaption></figure>
+    <figure class="frame reveal" data-delay="2" style="margin:0"><img src="assets/site.webp" alt="Two professionals in hard hats reviewing work on site" loading="lazy" width="733" height="1100"><figcaption>Professional on every site</figcaption></figure>
+  </div>
+</section>
+
+<!-- VISION / MISSION -->
+<section class="section vision" aria-labelledby="vision-title">
+  <svg class="ripple-bg" id="vision-ripple" viewBox="0 0 600 600" aria-hidden="true"></svg>
+  <div class="wrap">
+    <div class="section-head reveal" style="position:relative;z-index:1">
+      <span class="eyebrow" style="color:var(--yellow)">Where we're going</span>
+      <h2 id="vision-title" style="color:var(--white)">Beginning in Nigeria. <span class="hl-yellow">Built for the continent.</span></h2>
+    </div>
+    <div class="vm-grid">
+      <div class="vm-card reveal"><span class="k">Our vision</span><p>To establish Africa as a global source of highly skilled, business-ready technical professionals.</p></div>
+      <div class="vm-card reveal" data-delay="1"><span class="k">Our mission</span><p>To redefine skilled trades as a prestigious, technology-enabled profession, developing Africa's most respected generation of artisans.</p></div>
+    </div>
+    <div class="voice reveal" aria-label="Our tone of voice"><span>Brave.</span><span>Honest.</span><span>Confident.</span><span>Reassuring.</span><span>Informed.</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <a class="cta-band reveal" href="#contact-form" style="margin-bottom:clamp(60px,8vw,100px)"><span>start enabling prosperity</span><span class="circle" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="accent">Say hello!</span>
+        <h2 id="contact-title">Let's build something that lasts.</h2>
+        <p>Whether you're enrolling, sponsoring, hiring or partnering, tell us a little and the right person will get back to you.</p>
+        <ul class="contact-list">
+          <li><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span><a href="mailto:hello@kalvia.one">hello@kalvia.one</a></li>
+          <li><span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>50 Herbert Macaulay Way, Yaba, Lagos, Nigeria</li>
+        </ul>
+      </div>
+      <form class="contact reveal" data-delay="1" id="contact-form" novalidate>
+        <div class="field">
+          <label>I'm interested in</label>
+          <div class="chips">
+            <label><input type="radio" name="interest" value="Academy" checked><span>Academy</span></label>
+            <label><input type="radio" name="interest" value="Sponsoring"><span>Sponsoring a learner</span></label>
+            <label><input type="radio" name="interest" value="Marketplace"><span>Marketplace</span></label>
+            <label><input type="radio" name="interest" value="Partnership"><span>Partnership</span></label>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required><p class="err">Please tell us your name.</p></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err">Please enter a valid email.</p></div>
+        </div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required placeholder="Tell us about your goals"></textarea><p class="err">A short message helps us route you.</p></div>
+        <button class="btn btn-orange" type="submit" style="justify-self:start">Send message <span class="arrow">→</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Kalvia home"><svg viewBox="0 0 260.2 93.1" style="height:36px"><use href="#k-logo"/></svg></a>
+        <p class="foot-tag accent">Enabling prosperity.</p>
+      </div>
+      <div><h4>Kalvia</h4><ul><li><a href="#academy">Academy</a></li><li><a href="#academy" data-brand="market">Marketplace</a></li><li><a href="#soat">SOAT seal</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#about">About us</a></li><li><a href="#finder">Get started</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>50 Herbert Macaulay Way</li><li>Yaba, Lagos, Nigeria</li><li><a href="mailto:hello@kalvia.one">hello@kalvia.one</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="year">2026</span> Kalvia Limited and/or its affiliates. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script>
+/* Kalvia site interactions. No dependencies. */
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Arch geometry (the "Kalvia Access" window) ---------- */
+  // An arch: straight sides, semicircular top, centred on cx, resting on baseY.
+  const archPath = (cx, baseY, w, h) => {
+    const r = w / 2, top = baseY - h;
+    return `M${cx - r},${baseY} V${top + r} A${r},${r} 0 0 1 ${cx + r},${top + r} V${baseY}`;
+  };
+  const drawRipple = (svg, { cx, baseY, w0, h0, step, count, stroke }) => {
+    if (!svg) return;
+    let out = '';
+    for (let i = 0; i < count; i++) {
+      out += `<path d="${archPath(cx, baseY, w0 + i * step * 2, h0 + i * step)}"${stroke ? ` style="stroke:${stroke}"` : ''} opacity="${(1 - i / (count + 2)).toFixed(2)}"/>`;
+    }
+    svg.innerHTML = out;
+  };
+  drawRipple($('#hero-ripple'), { cx: 300, baseY: 600, w0: 300, h0: 360, step: 16, count: 14 });
+  drawRipple($('#vision-ripple'), { cx: 300, baseY: 600, w0: 120, h0: 150, step: 13, count: 22 });
+
+  /* ---------- Header, progress, active nav ---------- */
+  const header = $('.site-header');
+  const progress = $('.progress');
+  const heroPhoto = $('.hero-photo');
+  const onScroll = () => {
+    const y = scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    const max = document.documentElement.scrollHeight - innerHeight;
+    progress.style.setProperty('--p', max > 0 ? (y / max).toFixed(4) : 0);
+    if (heroPhoto && !reduced && y < innerHeight) heroPhoto.style.setProperty('--py', `${y * 0.12}px`);
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const toggle = $('.nav-toggle');
+  const links = $('#nav-links');
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    links.classList.toggle('open', open);
+  });
+  links.addEventListener('click', e => {
+    if (e.target.closest('a')) { toggle.setAttribute('aria-expanded', 'false'); links.classList.remove('open'); }
+  });
+
+  const sectionIds = ['academy', 'soat', 'about', 'contact'];
+  const navObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      $$('.nav-links a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id && !a.dataset.brand));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sectionIds.forEach(id => { const el = document.getElementById(id); if (el) navObs.observe(el); });
+
+  /* ---------- Reveal on scroll ---------- */
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); revealObs.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  $$('.reveal').forEach(el => revealObs.observe(el));
+
+  /* ---------- Hero word rotator ---------- */
+  const words = $$('.rotator > span');
+  if (words.length > 1 && !reduced && matchMedia('(min-width: 921px)').matches) {
+    let i = 0;
+    setInterval(() => {
+      const cur = words[i];
+      cur.classList.add('out'); cur.classList.remove('on');
+      i = (i + 1) % words.length;
+      const next = words[i];
+      next.classList.remove('out');
+      next.classList.add('on');
+      setTimeout(() => cur.classList.remove('out'), 650);
+    }, 2400);
+  }
+
+  /* ---------- The cycle (before / with Kalvia) ---------- */
+  const cycle = $('#cycle');
+  const sw = $('.switch');
+  const thumb = sw.querySelector('.thumb');
+  const swBtns = $$('button', sw);
+  const placeThumb = btn => {
+    thumb.style.width = btn.offsetWidth + 'px';
+    thumb.style.transform = `translateX(${btn.offsetLeft - 6}px)`;
+  };
+  const setCycle = mode => {
+    swBtns.forEach(b => b.setAttribute('aria-pressed', b.dataset.cycle === mode));
+    placeThumb(swBtns.find(b => b.dataset.cycle === mode));
+    sw.classList.toggle('after', mode === 'after');
+    cycle.classList.add('flip');
+    setTimeout(() => {
+      cycle.classList.toggle('after', mode === 'after');
+      $$('.cycle-center > span', cycle).forEach(s => { s.hidden = s.classList.contains('v-after') !== (mode === 'after'); });
+      cycle.classList.remove('flip');
+    }, 220);
+  };
+  swBtns.forEach(b => b.addEventListener('click', () => setCycle(b.dataset.cycle)));
+  addEventListener('load', () => placeThumb(swBtns.find(b => b.getAttribute('aria-pressed') === 'true')));
+  addEventListener('resize', () => placeThumb(swBtns.find(b => b.getAttribute('aria-pressed') === 'true')));
+  placeThumb(swBtns[0]);
+
+  /* ---------- Chain of prosperity ripple ---------- */
+  const stages = [
+    { key: 'Students', chain: 0, title: 'Students prosper', text: 'By gaining the skills, knowledge and opportunities needed to build meaningful, sustainable careers.' },
+    { key: 'Businesses', chain: 1, title: 'Businesses prosper', text: 'By gaining access to skilled, capable professionals who help them operate better, grow sustainably and thrive.' },
+    { key: 'Parents & sponsors', chain: 2, title: 'Families prosper', text: 'Parents and sponsors gain the confidence of seeing their children or beneficiaries become self-sufficient and build more secure futures.' },
+    { key: 'Society', chain: 3, title: 'Society prospers', text: 'When small and medium-sized businesses grow, they create jobs, solve everyday problems and strengthen local economies.' }
+  ];
+  const ringColors = ['#FF5A00', '#FFAE00', '#271CC1', '#C9C6EF'];
+  const rsvg = $('#ripple-svg');
+  const stage = $('#ripple-stage');
+  const cx = 250, baseY = 440;
+  const ringGeo = stages.map((_, i) => ({ w: 150 + i * 90, h: 175 + i * 80 }));
+  rsvg.innerHTML =
+    ringGeo.map((g, i) => `<path class="ring" data-i="${i}" d="${archPath(cx, baseY, g.w, g.h)}" stroke="${ringColors[i]}" opacity=".35"/>`).join('') +
+    `<path class="pulse" d="${archPath(cx, baseY, ringGeo[3].w, ringGeo[3].h)}"/>` +
+    `<path class="core" d="${archPath(cx, baseY, 80, 95)} Z"/>` +
+    `<line x1="20" x2="480" y1="${baseY}" y2="${baseY}" stroke="rgba(255,255,255,.25)" stroke-width="2"/>`;
+  const labels = stages.map((s, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'ripple-label';
+    b.textContent = s.key;
+    b.setAttribute('aria-pressed', 'false');
+    b.style.left = (cx / 500 * 100) + '%';
+    b.style.top = ((baseY - ringGeo[i].h) / 500 * 100) + '%';
+    stage.appendChild(b);
+    return b;
+  });
+  const copy = $('#prosper-copy');
+  const chainEls = $$('#chain span');
+  let activeStage = -1, autoTimer = null;
+  const setStage = (idx, user) => {
+    if (idx === activeStage) return;
+    activeStage = idx;
+    $$('.ring', rsvg).forEach((r, i) => {
+      r.classList.toggle('lit', i <= idx);
+      r.setAttribute('opacity', i <= idx ? 1 : .35);
+    });
+    labels.forEach((l, i) => l.setAttribute('aria-pressed', i === idx));
+    chainEls.forEach((c, i) => c.classList.toggle('lit', i <= stages[idx].chain));
+    const pulse = $('.pulse', rsvg);
+    pulse.classList.remove('go'); void pulse.getBBox(); pulse.classList.add('go');
+    copy.classList.add('swapping');
+    setTimeout(() => {
+      copy.innerHTML = `<h3>${stages[idx].title}</h3><p>${stages[idx].text}</p>`;
+      copy.classList.remove('swapping');
+    }, 250);
+    if (user) { clearInterval(autoTimer); autoTimer = null; }
+  };
+  labels.forEach((l, i) => l.addEventListener('click', () => setStage(i, true)));
+  $$('.ring', rsvg).forEach((r, i) => { r.style.cursor = 'pointer'; r.style.pointerEvents = 'stroke'; r.addEventListener('click', () => setStage(i, true)); });
+  setStage(0);
+  const rippleObs = new IntersectionObserver(([en]) => {
+    if (en.isIntersecting && !autoTimer && !reduced && activeStage < 3) {
+      autoTimer = setInterval(() => {
+        if (activeStage >= stages.length - 1) { clearInterval(autoTimer); return; }
+        setStage(activeStage + 1);
+      }, 2600);
+      rippleObs.disconnect();
+    }
+  }, { threshold: 0.5 });
+  rippleObs.observe(stage);
+
+  /* ---------- Academy / Marketplace tabs and audiences ---------- */
+  const audiences = {
+    academy: [
+      { tab: 'Students', who: 'For students', title: 'Relevance and quality.', text: 'Career-relevant, practical training that helps you become more market-ready, capable and competitive.', points: ['Hands-on workshop training in real trades', 'Customer and business skills, not just technique', 'Credentials recognised wherever opportunity exists'], tags: ['Mastery', 'Quality', 'Growth'] },
+      { tab: 'Parents & sponsors', who: 'For parents and sponsors', title: 'Assurance for a stronger future.', text: 'A credible pathway for empowering someone you support with relevant skills that lead to independence, security and opportunity.', points: ['A structured, accountable programme', 'Skills that lead directly to earning', 'Confidence that your support builds self-sufficiency'], tags: ['Assurance', 'Confidence'] },
+      { tab: 'Enterprises', who: 'For organisations', title: 'Impact you can measure.', text: 'An impact-led training platform that helps organisations create meaningful social and future impact through skills development and job creation.', points: ['Sponsor cohorts aligned to your workforce or CSR goals', 'Outcomes tied to skills and job creation', 'A partner built for long-term impact'], tags: ['Impact', 'Growth'] }
+    ],
+    market: [
+      { tab: 'Technicians', who: 'For technicians', title: 'Access and structure.', text: 'A structured pool of available jobs and client opportunities, supported by systems for placement, management and tracking.', points: ['Reliable access to jobs and clients', 'Invoicing and job tracking handled for you', 'The SOAT seal to show customers they can trust you'], tags: ['Access', 'Structure'] },
+      { tab: 'Customers', who: 'For homes and businesses', title: 'Reliable, skilled professionals.', text: 'Access to technicians positioned around professional mastery, quality and reliability.', points: ['Every technician certified and re-certified yearly', 'Professional conduct, not just a quick fix', 'Clear quality standards behind every job'], tags: ['Mastery', 'Ethics'] },
+      { tab: 'Enterprises', who: 'For organisations', title: 'Professionalism in service delivery.', text: 'Kalvia connects organisations with skilled professionals and strengthens professionalism in how services are delivered.', points: ['Vetted technicians for ongoing or project work', 'Structured quality assurance and standards', 'One partner for placement and management'], tags: ['Quality', 'Assurance'] }
+    ]
+  };
+  const renderAudience = (box, list, idx) => {
+    const a = list[idx];
+    box.querySelector('.aud-body').innerHTML =
+      `<span class="who">${a.who}</span><h4>${a.title}</h4><p>${a.text}</p>` +
+      `<ul>${a.points.map(p => `<li>${p}</li>`).join('')}</ul>` +
+      `<div class="promise-pill">${a.tags.map(t => `<span>${t}</span>`).join('')}</div>`;
+    $$('.aud-tab', box).forEach((t, i) => t.setAttribute('aria-selected', i === idx));
+  };
+  $$('.audience').forEach(box => {
+    const list = audiences[box.dataset.audience];
+    box.innerHTML = `<div class="aud-tabs" role="tablist">${list.map((a, i) => `<button class="aud-tab" role="tab" type="button" aria-selected="${i === 0}">${a.tab}</button>`).join('')}</div><div class="aud-body panel-swap" role="tabpanel"></div>`;
+    renderAudience(box, list, 0);
+    $$('.aud-tab', box).forEach((t, i) => t.addEventListener('click', () => {
+      const body = box.querySelector('.aud-body');
+      body.classList.add('swapping');
+      setTimeout(() => { renderAudience(box, list, i); body.classList.remove('swapping'); }, 200);
+    }));
+  });
+
+  const brandTabs = $$('.brand-tab');
+  const selectBrand = key => {
+    brandTabs.forEach(t => {
+      const on = t.dataset.brand === key;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls'));
+      panel.hidden = !on;
+      if (on) $$('.reveal', panel).forEach(r => r.classList.add('in'));
+    });
+  };
+  brandTabs.forEach((t, i) => {
+    t.addEventListener('click', () => selectBrand(t.dataset.brand));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const n = brandTabs[(i + (e.key === 'ArrowRight' ? 1 : -1) + brandTabs.length) % brandTabs.length];
+      n.focus(); selectBrand(n.dataset.brand);
+    });
+  });
+  $$('a[data-brand]').forEach(a => a.addEventListener('click', () => selectBrand(a.dataset.brand)));
+  $$('a[href="#academy"]:not([data-brand])').forEach(a => a.addEventListener('click', () => selectBrand('academy')));
+
+  /* ---------- Absorb / Apply / Ascend ---------- */
+  const zone = $('#mark-zone');
+  const stepNum = $('#step-num');
+  const zones = { book: ['52%', '30%', '#FF5A00'], gear: ['14%', '34%', '#FF5A00'], eye: ['0%', '100%', '#FFAE00'] };
+  const setZone = (key, n) => {
+    const [top, height, color] = zones[key];
+    Object.assign(zone.style, { top, height, background: color, opacity: key === 'eye' ? .9 : .85 });
+    stepNum.textContent = String(n).padStart(2, '0');
+    stepNum.style.color = key === 'eye' ? 'var(--blue-1)' : 'var(--yellow)';
+  };
+  const steps = $$('.j-step');
+  const stepObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      steps.forEach(s => s.classList.toggle('active', s === en.target));
+      setZone(en.target.dataset.zone, steps.indexOf(en.target) + 1);
+    });
+  }, { rootMargin: '-40% 0px -40% 0px' });
+  steps.forEach(s => stepObs.observe(s));
+  setZone('book', 1);
+
+  /* ---------- SOAT ---------- */
+  const seal = $('#seal');
+  const sealWrap = $('.seal-wrap');
+  if (!reduced && matchMedia('(hover: hover)').matches) {
+    sealWrap.addEventListener('mousemove', e => {
+      const r = sealWrap.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      seal.style.transform = `rotateY(${x * 22}deg) rotateX(${-y * 22}deg)`;
+    });
+    sealWrap.addEventListener('mouseleave', () => { seal.style.transform = ''; });
+  }
+  const countEls = $$('[data-count]');
+  const countObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const el = en.target, end = +el.dataset.count;
+      if (reduced) { el.textContent = end; return; }
+      const t0 = performance.now();
+      const tick = t => {
+        const p = Math.min(1, (t - t0) / 1200);
+        el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      countObs.unobserve(el);
+    });
+  }, { threshold: .6 });
+  countEls.forEach(el => countObs.observe(el));
+
+  // Sample register for the preview only. Replace with a call to Kalvia's live register.
+  const fmt = d => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  const today = new Date();
+  const addMonths = (d, m) => { const x = new Date(d); x.setMonth(x.getMonth() + m); return x; };
+  const sampleRegister = {
+    'KA17/A': { name: 'Lagbaja Tamedu', trade: 'Electrical installation', initials: 'LT', expires: addMonths(today, 8) },
+    'KA09/C': { name: 'Adebisi Adebolu', trade: 'Solar PV installation', initials: 'AA', expires: addMonths(today, -1) }
+  };
+  const vForm = $('#verify'), vInput = $('#soat-id'), vOut = $('#verify-result');
+  const verify = () => {
+    const id = vInput.value.trim().toUpperCase().replace(/\s+/g, '');
+    vOut.classList.remove('show'); void vOut.offsetWidth;
+    if (!id) { vOut.innerHTML = '<div class="verify-msg">Enter the ID printed on the technician\'s Kalvia card.</div>'; vOut.classList.add('show'); return; }
+    const t = sampleRegister[id];
+    if (!t) {
+      vOut.innerHTML = `<div class="verify-msg">We couldn't find <strong>${id.replace(/[<>&"]/g, '')}</strong> in the sample register. Check the ID on their card, or contact us before hiring.</div>`;
+    } else {
+      const valid = t.expires > today;
+      vOut.innerHTML = `<div class="tech-card"><div class="avatar" aria-hidden="true">${t.initials}</div><div><h4>${t.name}</h4><div class="meta">${t.trade} · ID ${id}</div><div class="meta">${valid ? 'Valid until' : 'Expired on'} ${fmt(t.expires)}</div></div><span class="badge ${valid ? 'ok' : 'warn'}">${valid ? 'SOAT valid' : 'Renewal due'}</span></div>`;
+    }
+    vOut.classList.add('show');
+  };
+  vForm.addEventListener('submit', e => { e.preventDefault(); verify(); });
+  $$('[data-try]').forEach(b => b.addEventListener('click', () => { vInput.value = b.dataset.try; verify(); }));
+
+  /* ---------- Path finder ---------- */
+  const personas = {
+    student: { kicker: 'Your door: Kalvia Academy', title: 'Build a career, not just a skill.', text: 'Practical training in the trades plus the professional skills clients expect. Graduate career-ready and SOAT-certified.', cta: 'Apply to the Academy', interest: 'Academy' },
+    sponsor: { kicker: 'Your door: Kalvia Academy', title: 'Sponsor a future you can see.', text: 'Give someone a credible pathway to independence and security, with a structured programme you can trust.', cta: 'Sponsor a learner', interest: 'Sponsoring' },
+    tech: { kicker: 'Your door: Kalvia Marketplace', title: 'Steady work, handled professionally.', text: 'Get access to jobs and clients, with placement, invoicing and tracking built in, and a seal customers recognise.', cta: 'Join the Marketplace', interest: 'Marketplace' },
+    org: { kicker: 'Your door: Academy + Marketplace', title: 'Hire certified talent, or fund real impact.', text: 'Hire vetted technicians through the Marketplace, or sponsor Academy cohorts for measurable workforce and social impact.', cta: 'Talk to partnerships', interest: 'Partnership' }
+  };
+  const fOut = $('#finder-out');
+  const setPersona = key => {
+    const p = personas[key];
+    $$('.persona').forEach(b => b.setAttribute('aria-pressed', b.dataset.persona === key));
+    fOut.classList.add('swapping');
+    setTimeout(() => {
+      fOut.innerHTML = `<div><span class="kicker">${p.kicker}</span><h3>${p.title}</h3><p>${p.text}</p></div><a class="btn btn-blue" href="#contact" data-interest="${p.interest}">${p.cta} <span class="arrow">→</span></a>`;
+      fOut.classList.remove('swapping');
+    }, 180);
+  };
+  $$('.persona').forEach(b => b.addEventListener('click', () => setPersona(b.dataset.persona)));
+  setPersona('student');
+
+  /* ---------- Values: tap to flip on touch ---------- */
+  $$('.value').forEach(v => v.addEventListener('click', () => v.classList.toggle('flipped')));
+
+  /* ---------- Contact form ---------- */
+  document.addEventListener('click', e => {
+    const a = e.target.closest('[data-interest]');
+    if (!a) return;
+    const r = $(`input[name="interest"][value="${a.dataset.interest}"]`);
+    if (r) r.checked = true;
+  });
+  const form = $('#contact-form');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let ok = true;
+    $$('.field', form).forEach(f => {
+      const input = f.querySelector('input[required], textarea[required]');
+      if (!input) return;
+      const valid = input.type === 'email' ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim()) : input.value.trim().length > 1;
+      f.classList.toggle('invalid', !valid);
+      if (!valid && ok) { input.focus(); ok = false; }
+    });
+    if (!ok) return;
+    const name = form.elements.namedItem('name').value.trim().split(' ')[0].replace(/[<>&"]/g, '');
+    // Preview only: wire this to Kalvia's form endpoint or CRM before launch.
+    form.innerHTML = `<div class="form-done" role="status"><div class="big accent" style="color:var(--orange)">Thank you, ${name}!</div><h3>Your message is on its way.</h3><p style="color:var(--ink-soft)">We'll reply to you by email. Meanwhile, keep enabling prosperity.</p></div>`;
+  });
+  $$('input, textarea', form).forEach(i => i.addEventListener('input', () => i.closest('.field').classList.remove('invalid')));
+
+  $('#year').textContent = new Date().getFullYear();
+})();
+
+</script>
+
+</body></html>

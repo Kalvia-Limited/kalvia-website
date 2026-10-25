@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@theme {
+
+  --color-blue-1: #170C79;      /* Kalvia Blue 1 (primary) */
+  --color-blue-2: #271CC1;      /* Kalvia Blue 2 (primary) */
+  --color-blue-3: #0A0250;      /* Kalvia Blue 3 */
+  --color-green-1: #023903;
+  --color-green-2: #047D06;
+  --color-yellow: #FFAE00;
+  --color-passion: #DB213A;
+  --color-orange: #FF5A00;
+
+  --color-blue-1-25: #C5C2DD;
+  --color-blue-1-7: #EDECF5;
+  --color-blue-2-25: #C9C6EF;
+  --color-yellow-25: #FFEBBF;
+  --color-yellow-7: #FFF8EB;
+  --color-orange-25: #FFD6BF;
+  --color-orange-7: #FFF3EB;
+  --color-green-25: #C0DEC1;
+
+  --color-paper: #FBFAF7;       /* off-white page tone used across the book */
+  --color-ink: #0A0250;
+  --color-ink-soft: #4A4670;
+  --color-white: #fff;
+
+  --font-sans: "Parkinsans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-accent: "DK Cool Crayon", cursive;
+
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-pill: 999px;
+  --container-wrap: 1200px;
+  --spacing-gutter: clamp(16px, 4vw, 40px);
+  --ease-brand: cubic-bezier(.2, .8, .2, 1);
+
+ --spacing-section: clamp(80px,11vw,140px);
+ --shadow-card: 0 2px 0 #EDECF5;
+ --shadow-nav: 0 6px 30px rgb(10 2 80 / 8%);
+ --breakpoint-xs: 480px;
+ --breakpoint-field: 520px;
+ --breakpoint-persona: 560px;
+ --breakpoint-gallery: 760px;
+ --breakpoint-content: 860px;
+ --breakpoint-panel: 900px;
+ --breakpoint-nav: 920px;
+}
+@theme inline { --font-sans: var(--font-parkinsans), system-ui, -apple-system, "Segoe UI", sans-serif; --font-accent: var(--font-dk-cool-crayon), cursive; }
+@layer base { :root { color-scheme: light; } html { scroll-behavior: smooth; scroll-padding-top: calc(110px + env(safe-area-inset-top, 0px)); } body { @apply m-0 bg-paper font-sans text-ink; line-height: 1.55; } h1,h2,h3,h4 { @apply m-0 font-bold; line-height: 1.08; letter-spacing: -.01em; } p { margin: 0; } img,svg { display:block; max-width:100%; } button,input,textarea,select { font:inherit; } button { cursor:pointer; } :focus-visible { outline:3px solid var(--color-orange); outline-offset:3px; } [hidden] { display:none !important; } }
+@utility arch { border-radius:999px 999px var(--radius-md) var(--radius-md); } @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition-duration:.01ms !important; scroll-behavior:auto !important; } }
+/* Static section fidelity; retained selectors simplify interaction migration in step 6. */

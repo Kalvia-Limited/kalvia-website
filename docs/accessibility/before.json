@@ -1,0 +1,3586 @@
+{
+  "origin": "http://127.0.0.1:3000",
+  "records": [
+    {
+      "width": 320,
+      "height": 740,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#academy-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".academy > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #fff2eb, background color: #ff5a00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(3) > div > small"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".kicker"
+            ],
+            [
+              "#finder-out > div > h3"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [
+        {
+          "tag": "H2",
+          "class": "sr-only",
+          "text": "The chain of prosperity",
+          "width": 1,
+          "scrollWidth": 186
+        }
+      ],
+      "offscreenControls": [
+        {
+          "tag": "A",
+          "id": "",
+          "class": "btn btn-blue"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "class": "btn btn-blue"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#academy-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".academy > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #fff2eb, background color: #ff5a00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".btn-ghost"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [
+        {
+          "tag": "H2",
+          "class": "sr-only",
+          "text": "The chain of prosperity",
+          "width": 1,
+          "scrollWidth": 186
+        }
+      ],
+      "offscreenControls": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "#tab-market",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#market-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[data-interest=\"Marketplace\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#market-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-0"
+            ],
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".btn-ghost"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "#market-audience-tab-1",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#market-audience-1"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[data-interest=\"Marketplace\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#market-audience-1 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-0"
+            ],
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".btn-ghost"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "[data-try=\"KA17/A\"]",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#market-audience-1"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[data-interest=\"Marketplace\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#market-audience-1 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                ".tech-card > div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                ".foot-grid > div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-0"
+            ],
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".btn-ghost"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": ".value",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#market-audience-1"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[data-interest=\"Marketplace\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#market-audience-1 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                ".tech-card > div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                ".foot-grid > div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-0"
+            ],
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".btn-ghost"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "state": "invalid contact form",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#market-audience-1"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "a[data-interest=\"Marketplace\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#market-audience-1 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"book\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cta-band > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 15.6pt (20.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                ".tech-card > div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                ".foot-grid > div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-0"
+            ],
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".btn-ghost"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".cycle-node:nth-child(4) > div > .v-before"
+            ],
+            [
+              "a[data-interest=\"Marketplace\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              "#finder-out > div > p"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > .n"
+            ],
+            [
+              ".front.value-face[aria-hidden=\"true\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#academy-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn-ghost"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.85 (foreground color: #ffffff, background color: #ffae00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".academy > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #fff2eb, background color: #ff5a00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 24.0pt (32px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".hero-copy > .eyebrow"
+            ],
+            [
+              "#hero-title"
+            ],
+            [
+              ".on"
+            ],
+            [
+              ".hero-lede"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [
+        {
+          "tag": "H2",
+          "class": "sr-only",
+          "text": "The chain of prosperity",
+          "width": 1,
+          "scrollWidth": 186
+        }
+      ],
+      "offscreenControls": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#academy-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".nav-cta"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".academy > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #fff2eb, background color: #ff5a00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 30.7pt (40.96px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 30.7pt (40.96px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".hero-tag"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-2"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-4"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              "#vision-title"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [
+        {
+          "tag": "H2",
+          "class": "sr-only",
+          "text": "The chain of prosperity",
+          "width": 1,
+          "scrollWidth": 186
+        }
+      ],
+      "offscreenControls": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#academy-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".nav-cta"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".academy > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #fff2eb, background color: #ff5a00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 38.4pt (51.2px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 38.4pt (51.2px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".hero-tag"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [
+        {
+          "tag": "H2",
+          "class": "sr-only",
+          "text": "The chain of prosperity",
+          "width": 1,
+          "scrollWidth": 186
+        }
+      ],
+      "offscreenControls": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "initial",
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "nodes": [
+            {
+              "target": [
+                "#academy-audience-0"
+              ],
+              "summary": "Fix any of the following:\n  ARIA role tabpanel is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Ensure ARIA attributes are not prohibited for an element's role",
+          "nodes": [
+            {
+              "target": [
+                ".rotator"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+            },
+            {
+              "target": [
+                "b[aria-label=\"12\"]"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute cannot be used on \"b\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-actions > .btn-orange.btn[href$=\"#finder\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn-ghost"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.85 (foreground color: #ffffff, background color: #ffae00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".cycle-copy > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".academy > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #fff2eb, background color: #ff5a00, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#academy-audience-0 > .who"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ff5a00, background color: #ffffff, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".journey > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #ff5a00, background color: #fff8eb, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 25.3pt (33.76px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"gear\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > .tag"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #ffde99, background color: #aea5c3, font size: 9.6pt (12.8px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #aea5c3, background color: #fff8eb, font size: 25.3pt (33.76px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "article[data-zone=\"eye\"] > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.8 (foreground color: #c0bac0, background color: #fff8eb, font size: 13.4pt (17.92px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".verify-row > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA17/A\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-try=\"KA09/C\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.08 (foreground color: #be8327, background color: #271d82, font size: 9.8pt (13.12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#finder > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "section[aria-labelledby=\"values-title\"] > .wrap > .section-head.reveal.in > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 9.4pt (12.48px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".contact-info > .accent"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #ff5a00, background color: #fbfaf7, font size: 21.6pt (28.8px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-fields > .btn-orange.btn[type=\"submit\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #ffffff, background color: #ff5a00, font size: 10.2pt (13.6px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                ".promise-item.reveal.in:nth-child(1) > div > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > h4"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-allowed-role",
+          "targets": [
+            [
+              "#academy-audience-1"
+            ],
+            [
+              "#academy-audience-2"
+            ],
+            [
+              "#market-audience-0"
+            ],
+            [
+              "#market-audience-1"
+            ],
+            [
+              "#market-audience-2"
+            ]
+          ]
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "targets": [
+            [
+              ".voice"
+            ]
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".hero-copy > .eyebrow"
+            ],
+            [
+              "#hero-title"
+            ],
+            [
+              ".on"
+            ],
+            [
+              ".hero-lede"
+            ],
+            [
+              ".btn-orange.btn[href$=\"#finder\"] > .arrow"
+            ],
+            [
+              ".c1 > .dot"
+            ],
+            [
+              ".c2 > .dot"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > .arrow"
+            ],
+            [
+              "text[y=\"238\"]"
+            ],
+            [
+              "text[y=\"262\"]"
+            ],
+            [
+              "text[y=\"290\"]"
+            ],
+            [
+              ".btn-blue[data-interest=\"Academy\"][href$=\"#contact\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-controls=\"value-description-0\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-0"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Pursue Mastery\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-1"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Own the Outcome\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Earn Trust Every Day\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-3"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Serve with Professionalism\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > .n"
+            ],
+            [
+              "button[aria-label=\"Advance Together\"] > .value-inner > .front.value-face[aria-hidden=\"false\"] > h3"
+            ],
+            [
+              "#value-description-5"
+            ],
+            [
+              ".hl-yellow"
+            ],
+            [
+              ".vm-card.reveal.in:nth-child(1) > p"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > .k"
+            ],
+            [
+              ".vm-card.reveal[data-delay=\"1\"] > p"
+            ],
+            [
+              ".voice > span:nth-child(2)"
+            ],
+            [
+              ".voice > span:nth-child(3)"
+            ],
+            [
+              ".voice > span:nth-child(4)"
+            ],
+            [
+              ".voice > span:nth-child(5)"
+            ],
+            [
+              ".arrow[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "state": "geometry",
+      "pageOverflow": false,
+      "clippedText": [
+        {
+          "tag": "H2",
+          "class": "sr-only",
+          "text": "The chain of prosperity",
+          "width": 1,
+          "scrollWidth": 186
+        }
+      ],
+      "offscreenControls": []
+    }
+  ],
+  "errors": []
+}
