@@ -1,35 +1,140 @@
-# Kalvia website
+# Kalvia
 
-Step 10 is complete: mobile layouts, contrast, touch targets, keyboard focus, screen-reader semantics and reduced motion have been refined. Production verification passes 131 mobile/accessibility checks and 22 automated accessibility audits across nine viewport sizes, including 200% text reflow; all 115 interaction regression checks pass. Run `npm run test:accessibility` against the running site. See [verification notes and screenshots](docs/accessibility/README.md).
+**Kalvia is a single-page platform for helping people absorb knowledge, apply practical skills, and ascend in their careers.** The production website is available at [kalvia.one](https://kalvia.one).
 
-Next.js App Router foundation with TypeScript, Tailwind CSS and ESLint. The homepage is a Server Component; introduce client components only for interactive features.
+## Project Description
 
-Use Node.js 20.9 or newer and npm. Run `npm ci`, then `npm run dev` and open http://localhost:3000. Production: `npm run build`, then `npm start`. Checks: `npm run lint` and `npm run type-check`.
+This website presents Kalvia's Academy, Marketplace, sponsorship, partnership, SOAT information, journey, values, and contact paths in one responsive experience. It is designed for prospective learners, partners, sponsors, and marketplace participants. The page preserves the original Kalvia visual identity and includes keyboard-accessible navigation, audience and offering tabs, persona discovery, reduced-motion support, and a clearly labelled local SOAT demonstration.
 
-`app/` owns routes and global styles, `components/` holds shared UI and sections, `data/` holds content, `lib/` holds future server and validation modules, `db/migrations/` holds future migrations, and `public/assets/` will receive migrated assets.
+The contact form submits enquiries to a server-side PostgreSQL endpoint. It does not send email, provide accounts or payments, expose an admin dashboard, or query a live technician register. Contact success means that PostgreSQL confirmed the enquiry was saved.
 
-The original `kalvia-website/` source remains the migration reference. See `docs/baseline/README.md`. Step 2 provides only the foundation; subsequent steps migrate the visual design, content and interactions. The contact endpoint saves enquiries to PostgreSQL when its server environment is configured; missing database or origin configuration returns HTTP 503. `.env.example` contains placeholders only; do not commit credentials.
+## Tech Stack
 
-Validation: production build, ESLint, TypeScript and production HTTP smoke check pass. npm reports five high-severity entries in the development-only braces / micromatch / fast-glob / Next ESLint dependency chain. The offered forced fix downgrades the Next ESLint configuration to v14, so it has not been applied.
+- Next.js 16 App Router and React 19
+- TypeScript 6
+- Tailwind CSS 4 with PostCSS
+- PostgreSQL with the `pg` driver
+- Next.js `next/font` with self-hosted Parkinsans and DK Cool Crayon fonts
+- ESLint 9
+- Headless Chrome, `axe-core`, and custom Node.js scripts for browser verification
 
-Visual foundation (step 3): brand tokens live in app/globals.css using Tailwind v4 theme values. Shared primitives, form controls, keyboard tabs, original logo/mark paths and decorative arches live in components/ui. Parkinsans and Gochi Hand are self-hosted through next/font; first builds require access to Google Fonts. The homepage previews these components until section migration. Fields are a visual preview and do not submit. Field errors should be linked through aria-describedby and aria-invalid. Responsive captures at 390, 768 and 1440px are in docs/foundation; no JavaScript exceptions or horizontal overflow were recorded. Build, lint and type checks pass. Next.js warns that automatic Parkinsans fallback metrics are unavailable; explicit system fallbacks remain configured.
+## Getting Started
 
-Step 4: typed audience/persona/value records and original section copy are in data/content.ts; typed navigation and image metadata are in data/site.ts. All five source assets are copied byte-identically to public/assets. SiteImage uses next/image with dimensions, responsive sizes and descriptive alternatives. The hero is prioritized and gallery images load lazily. Logo, BrandMark, ArchRipple and SoatSeal are reusable decorative SVG components. Original UTF-8 wording and all reference files remain unchanged. Build, lint, type checks and production asset/image HTTP checks pass. Full section migration follows in step 5.
+### Prerequisites
 
-Step 5: the complete server-rendered homepage is in components/sections/homepage.tsx; typed audience/persona copy is rendered by supporting.tsx. Original section order and anchor IDs are retained. app/reference-layout.css preserves source layout selectors and styling for visual fidelity while interactions are migrated in step 6. No original script is loaded. Contact submission is disabled and labelled until step 8; SOAT remains sample-only. Audience variants and the Marketplace panel are present in the server HTML; switching and mobile menu opening are step 6 work. Responsive production captures are in docs/static-page. Build, lint and TypeScript checks pass; reference source integrity remains unchanged.
+- Node.js 20.9 or newer
+- npm
+- PostgreSQL 18 tools for the local database setup
+- Google Chrome for browser-based verification scripts
 
-Step 6: local interactions use React state in `components/sections/interactions.tsx`, `interactive-sections.tsx`, and `interactive-content.tsx`; the homepage continues to compose static server-rendered content. The shared provider connects offering navigation and contact-interest prefilling. Menus close on Escape, link selection, outside clicks, focus departure, and desktop resizing. Offering and audience tabs support Arrow Left/Right, Home, and End. Value cards support mouse hover, touch taps, Enter, Space, and Escape. Reveal effects leave text visible before hydration; motion preferences disable automatic headline/prosperity changes, parallax, seal tilt, and CSS animation. Timers, animation frames, media listeners, resize/visibility observers, and event listeners are cleaned up. SOAT sample interactions are local; the contact preview never submits or reports success while persistence remains pending in step 8.
+### Install and run
 
-To verify interactions, build and start the production app, then run `npm run test:interactions` in another terminal. The script uses headless Chrome (default Windows installation); set `CHROME_PATH` for another installation and `TEST_ORIGIN` for another local port. It writes responsive screenshots and a report to `docs/interactions/`. All 71 browser checks pass at desktop, tablet, and mobile sizes, including keyboard and touch input, reduced motion, and absence of browser console errors. Lint, TypeScript and production build pass; original source hashes match the baseline. The existing Parkinsans fallback-metrics build warning remains.
+```powershell
+git clone <repository-url>
+cd kalvia-website
+npm ci
+Copy-Item .env.example .env.local
+npm run dev
+```
 
-Step 7: `seal-demo.tsx` keeps the two sample records in a local Map. `KA17/A` demonstrates a valid seal and `KA09/C` an expired seal; other IDs show an unknown-sample message. Casing and whitespace are normalized, empty input shows guidance, and submitted text is rendered safely by React. The form and results identify the demonstration and explain that no live register is queried and no real technician is verified. Email and address details are displayed as information. All links and application, sponsorship, hiring, partnership and footer actions target existing homepage anchors. The expanded browser suite passes 103 checks, including every anchor action and network monitoring that confirms SOAT creates no Fetch, XHR or document requests. Run it with the same `npm run test:interactions` command; the current report is in `docs/interactions/check-report.json`. Lint, TypeScript, production build and original-source integrity checks pass.
+Open [http://localhost:3000](http://localhost:3000).
 
-Step 8: the contact form is connected to PostgreSQL with validation, an empty honeypot, shared atomic rate limits, origin and body-size checks, and accurate pending/success/error states. Run `npm run db:setup-local` to start the isolated local cluster and migrate development/test databases. `npm run db:migrate` runs versioned migrations; `npm run db:prune` deletes enquiries older than 180 days using separate maintenance credentials. `npm run test:contact` passes 39 real PostgreSQL integration checks; browser checks pass 114 checks, including form UI states. See [contact operations](docs/contact/operations.md) for environment configuration, role permissions, TLS, trusted proxies, staff retrieval, retention, and backup/restore procedures.
+To create the isolated local PostgreSQL cluster and apply migrations, run this before starting the app:
 
-Production setup remains pending. No Prisma Postgres production database or backups have been created. Prisma Postgres currently cannot provide the restricted PostgreSQL application role required by the plan; resolve this requirement before production provisioning. The application and local persistence are verified, but step 8 is not fully ticked off until production database and backup configuration are complete.
+```powershell
+npm run db:setup-local
+npm run dev
+```
 
-Step 9: common security headers are owned by Next.js configuration, and `proxy.ts` supplies a fresh CSP nonce for each page/API/error response. The homepage and HTML errors now render per request so Next.js bootstrap scripts receive matching nonces; do not put nonced HTML in a shared cache or static export. Production scripts require nonces with strict-dynamic, while existing React style attributes remain allowed. Self-hosted fonts, images and same-origin contact submissions work under enforcement. `npm run test:security` passes 272 header checks and 120 browser checks in each of report-only and enforced modes, including real test-database contact persistence and an injected-script check. See [security configuration and rollout](docs/security/README.md).
+The setup script uses `127.0.0.1:55432`, creates separate development and test databases, and writes local connection details under `.local/`. It can use another PostgreSQL installation by setting `POSTGRES_BIN`. Do not commit `.env.local`, `.local/`, database credentials, or production data.
 
-Step 9 deployment verification remains pending: enable HSTS only after a production HTTPS origin and its ingress protocol are confirmed using `SECURITY_HTTPS_ORIGIN`, then verify actual deployed page, API and error headers. No subdomain or preload HSTS opt-in is configured. `CSP_REPORT_ONLY=true` is available for staging verification; production defaults to enforcement.
+### Useful commands
 
-Step 11: metadata, canonical URLs, robots and the sitemap use the confirmed production origin https://kalvia.one (override with SITE_ORIGIN and rebuild). Branded Open Graph/Twitter images are generated locally. The hero is preloaded, gallery images are deferred, and responsive sizes and reserved dimensions support stable layouts. Run npm run test:delivery against a production server; see [delivery verification](docs/delivery/README.md) for results and configuration.
+```powershell
+npm run lint
+npm run type-check
+npm run build
+npm start
+npm run db:migrate
+npm run db:prune
+```
+
+Browser checks expect a running production server. Set `TEST_ORIGIN` when it is not running on the script's default port. Set `CHROME_PATH` when Chrome is installed somewhere other than its default Windows location.
+
+```powershell
+npm run build
+npm start
+$env:TEST_ORIGIN = "http://127.0.0.1:3000"
+npm run test:interactions
+npm run test:accessibility
+npm run test:delivery
+npm run test:security
+```
+
+The verification reports are written to `docs/`. See the [accessibility notes](docs/accessibility/README.md), [contact operations](docs/contact/operations.md), [security configuration](docs/security/README.md), and [delivery verification](docs/delivery/README.md) for details.
+
+## Environment Variables
+
+Copy `.env.example` to `.env.local`. Every variable below is server-only. Never prefix these values with `NEXT_PUBLIC_` or commit real credentials.
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `DATABASE_URL` | Contact runtime | PostgreSQL connection for the restricted application role. |
+| `MIGRATION_DATABASE_URL` | Database migrations | Direct connection for the schema-owner migration role. Keep it out of the app runtime. |
+| `MAINTENANCE_DATABASE_URL` | Retention job | Connection for pruning expired enquiries and rate-limit buckets. |
+| `CONTACT_ALLOWED_ORIGINS` | Contact runtime | Comma-separated exact origins allowed to submit the form. |
+| `CONTACT_RATE_LIMIT_SECRET` | Contact runtime | At least 32 random characters, shared by all app instances. |
+| `DATABASE_CA_CERT` | Optional | PEM certificate for remote database TLS when system CAs are insufficient. |
+| `CONTACT_CLIENT_IP_HEADER` | Optional | One trusted client-IP header written by a configured hosting ingress. |
+| `CSP_REPORT_ONLY` | Optional | Set to `true` to verify CSP in report-only mode. Defaults to `false`. |
+| `SECURITY_HTTPS_ORIGIN` | Production only | Exact verified HTTPS origin that may receive HSTS. |
+| `SITE_ORIGIN` | Optional | Canonical site origin for metadata, robots, and sitemap. Defaults to `https://kalvia.one`. |
+| `LOCAL_POSTGRES_ADMIN_URL` | Local setup only | Existing local admin connection used by `db:setup-local`; never deploy it. |
+
+Remote database connections must use TLS with certificate validation. The application role must not have schema, read, update, or delete access beyond the permissions required by the contact endpoint. See [contact operations](docs/contact/operations.md) for roles, rate limits, retention, retrieval, and backups.
+
+## Deployment
+
+The app can be deployed to a Node.js-compatible Next.js host:
+
+```powershell
+npm ci
+npm run build
+npm start
+```
+
+Configure the production environment before accepting contact submissions:
+
+1. Provision a PostgreSQL database with separate application, migration, reader, and maintenance roles.
+2. Set the production secrets and exact HTTPS origin in the host secret store.
+3. Run `npm run db:migrate` from a release job using `MIGRATION_DATABASE_URL`; migrations do not run automatically at app startup.
+4. Schedule `npm run db:prune` with `MAINTENANCE_DATABASE_URL` to enforce the 180-day enquiry retention period.
+5. Configure encrypted backups, verify a restore rehearsal, and restrict staff retrieval to private database access.
+6. Verify the homepage, error responses, `/api/contact`, CSP, cache headers, HTTPS redirect, and HSTS on the deployed host.
+
+Production provisioning is not complete in this repository: no production database, backup schedule, hosting ingress, or restore rehearsal has been configured. The current Prisma Postgres proposal also does not provide the restricted PostgreSQL role model required by the application; resolve that constraint or choose a provider with role controls before launch.
+
+## Project Structure
+
+- `app/`: routes, metadata, global styles, and the contact API route
+- `components/`: reusable UI and homepage sections
+- `data/`: typed site and content data
+- `lib/`: database, validation, metadata, and security modules
+- `db/migrations/`: versioned PostgreSQL migrations
+- `public/assets/`: website images and other public assets
+- `kalvia-website/`: original static source retained as a migration reference
+- `scripts/`: database, browser, accessibility, security, and delivery checks
+- `docs/`: implementation verification and operational runbooks
+
+## Contributing
+
+1. Create a focused branch from the current default branch.
+2. Keep content, visual, accessibility, and security changes consistent with the existing single-page experience.
+3. Run `npm run lint`, `npm run type-check`, and `npm run build` before opening a pull request. Run the relevant database or browser checks when those areas change.
+4. Describe the user-visible change, validation performed, environment assumptions, and any deployment or migration work in the pull request.
+
+Do not include credentials, personal contact submissions, production exports, or generated local database files in commits. Do not edit an applied migration; add a new numbered migration instead.
+
+## License
+
+This repository does not currently include a license file or declare an open-source license. Unless the project owner adds one, the source remains "all rights reserved" and is not licensed for redistribution or reuse. Third-party dependencies retain their own licenses.
